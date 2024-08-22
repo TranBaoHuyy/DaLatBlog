@@ -1,0 +1,4229 @@
+//style all page
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    .container-parent {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        overflow: hidden;
+        background-image: url("/public/image/anhbia.jpg");
+        background-position: top center;
+        background-repeat: repeat-y;
+        background-size: cover;
+        .header {
+            width: 100%;
+            padding-top: 0;
+            margin: 0 auto;
+            display: block;
+            background-color: white;
+            position: fixed;
+            overflow: hidden;
+            z-index: 1000;
+            border-bottom: 1px solid #969696;
+            .wrapper {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                .wrapper-top {
+                    width: 1200px;
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #969696;
+                    .logo-blog {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        a {
+                            width: 100%;
+                            height: auto;
+                            img {
+                                width: 100%;
+                                max-width: 150px;
+                            }
+                        }
+                        .blog-title {
+                            display: flex;
+                            img {
+                                max-width: 350px;
+                            }
+                        }
+                    }
+                    .auth-container {
+                        padding-left: 50px;
+                        margin-left: 150px;
+                        display: flex;
+                        justify-content: center;
+                        .auth-box {
+                            width: 100%;
+                            a {
+                                margin-left: 10px;
+                                text-decoration: none;
+                                font-size: 15px;
+                                color: #424242;
+                                &:hover {
+                                    color: red;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .nav-Navigation {
+                width: 100%;
+                overflow: hidden;
+                nav {
+                    width: 100%;
+                    overflow: hidden;
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        li {
+                            padding: 23px 50px 23px 22px;
+                            list-style: none;
+                            a {
+                                text-decoration: none;
+                                color: #424242;
+                                font-size: 15px;
+                                text-transform: uppercase;
+                                padding: 10px 0px 10px 0px;
+                                margin: 0;
+                                letter-spacing: 1px;
+                                font-weight: 500;
+                                &:hover {
+                                    border-bottom: 1px solid #424242;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .body-content {
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;  
+            overflow: hidden;  
+            z-index: 1; 
+            .content {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                .box-content-wrapper {
+                    width: 100%;
+                    height: auto;
+                    overflow: hidden;
+                    .box-content-header {
+                        width: 100%;
+                        height: 650px;
+                        margin-top: 40px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        background-image: url("/public/image/banner.jpg");
+                    }
+                    .content-blog {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        flex-direction: row;
+                        gap: 20px;
+                        margin-top: 20px;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        .blog-choice1 {
+                            height: 500px;
+                            width: 400px;
+                            background-position: center;
+                            background-clip: border-box;
+                            background-size: cover;
+                            background-image: url("/public/image/background.jpg");
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;      
+                            a{  
+                                width: 100%;
+                                height: 50px;
+                                display: flex;
+                                justify-content: center;
+                                text-decoration: none;
+                                align-items: center;
+                                text-align: center;
+                                color: #424242;
+                                .title-blog {  
+                                background-color: #ffffff;
+                                border-radius: 5px;
+                                display: flex;
+                                overflow: hidden;
+                                text-align: center;
+                                justify-content: center;
+                                align-items: center;
+                                width: 200px;
+                                height: 60px;
+                                }   
+                            }
+                            &:hover {
+                                opacity: 0.8;
+                            }
+                        }
+                        .blog-choice2 {
+                            height: 500px;
+                            width: 400px;
+                            background-position: center;
+                            background-clip: border-box;
+                            background-size: cover;
+                            background-image: url("/public/image/amthucDalat.jpg");
+                            display: flex;
+                            overflow: hidden;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            .title-blog {
+                                background-color: #ffffff;
+                                border-radius: 5px;
+                                display: flex;
+                                text-align: center;
+                                justify-content: center;
+                                align-items: center;
+                                width: 200px;
+                                height: 60px;
+                                a {
+                                    width: 100%;
+                                    height: 50px;
+                                    display: flex;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    align-items: center;
+                                    text-align: center;
+                                    color: #424242;
+                                }
+                            }
+                            &:hover {
+                                opacity: 0.8;
+                            }
+                        }
+                        .blog-choice3 {
+                            height: 500px;
+                            width: 400px;
+                            background-position: center;
+                            background-clip: border-box;
+                            background-size: cover;
+                            background-image: url("/public/image/lifestyle.jpg");
+                            display: flex;
+                            overflow: hidden;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            .title-blog {
+                                background-color: #ffffff;
+                                border-radius: 5px;
+                                display: flex;
+                                text-align: center;
+                                justify-content: center;
+                                align-items: center;
+                                width: 200px;
+                                height: 60px;
+                                a {
+                                    width: 100%;
+                                    height: 50px;
+                                    display: flex;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    align-items: center;
+                                    text-align: center;
+                                    color: #424242;
+                                }
+                            }
+                            &:hover {
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+                }
+                //posts
+                .blog-box {
+                    width: 100%;
+                    margin-top: 50px;
+                    display: block;
+                    overflow: hidden;
+                    .blog-title {
+                        margin-top: 10px;
+                        width: 100%;
+                        height: 100px;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        justify-content: center;
+                        p {
+                            font-weight: normal;
+                            font-size: 40px;
+                            color: #424242;
+                        }
+                    }
+                    .blog-content {
+                        width: 1200px;
+                        height: auto;
+                        margin: 0 auto;
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        .blog-content-left {
+                            width: 60%;
+                            height: auto;
+                            display: block;
+                            background-color: #ffffff;
+                            overflow: hidden;
+                            .blog-wrapper {
+                                width: 100%;
+                                height: auto;
+                                margin-bottom: 10px;
+                                .blog-thumbnail {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    text-align: center;
+                                    overflow: hidden;
+                                    .blog-date {
+                                        width: 18%;
+                                        height: 310px;
+                                        i {
+                                            margin-top: 90px;
+                                            font-size: 40px;
+                                            margin-bottom: 10px;
+                                            color: rgb(243, 122, 122);
+                                        }
+                                        .calendar-time {
+                                            font-size: 18px;
+                                            color: #424242;
+                                        }
+                                    }
+                                    .blog-image {
+                                        width: 82%;
+                                        height: 350px;
+                                        img {
+                                            width: 100%;
+                                            height: 340px;
+                                        }
+                                    }
+                                }
+                                .blog-content-inner {
+                                    width: 100%;
+                                    height: auto;
+                                    margin-bottom: 40px;
+                                    overflow: hidden;
+                                    display: flex;
+                                    .blog-content-inner-wrapper {
+                                        width: 80%;
+                                        margin-left: 130px;
+
+                                        h1 {
+                                            font-size: 32px;
+                                            color: #424242;
+                                        }
+                                        p {
+                                            width: 100%;
+                                            margin: 10px 0px 10px 0px;
+                                            color: #424242;
+                                        }
+                                        .button-read {
+                                            width: 130px;
+                                            height: 50px;
+                                            margin-top: 20px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            text-align: center;
+                                            cursor: pointer;
+                                            background-color: white;
+                                            outline: 1px solid #383838;
+                                            a {
+                                                cursor: pointer;
+                                                font-size: 15px;
+                                                height: 30px;
+                                                width: 100px;
+                                                display: flex;
+                                                color: #424242;
+                                                font-weight: 700;
+                                                justify-content: center;
+                                                align-items: center;
+                                                text-align: center;
+                                                outline: 1px solid #383838;
+                                            }
+                                            &:hover {
+                                                background-color: #e9e3e3;
+                                            }
+                                        }
+                                        .social-icon {
+                                            width: 100%;
+                                            margin-top: 20px;
+                                            a {
+                                                margin-top: 20px;
+                                                margin-left: 10px;
+                                                text-decoration: none;
+                                                i {
+                                                    opacity: 0.5;
+                                                    color: #1b1b1b;
+                                                    font-size: 30px;
+                                                }
+                                                &:hover > i {
+                                                    opacity: 1;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .blog-content-right {
+                            width: 30%;
+                            height: 100%;
+                            margin-left: 60px;
+                            overflow: hidden;
+                            .sidebar {
+                                width: 100%;
+                                height: auto;
+                                .about-me {
+                                    width: 100%;
+                                    background-color: #ffffff;
+                                    .about-me-title {
+                                        width: 100%;
+                                        padding: 20px 0px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        p {
+                                            width: 100px;
+                                            height: 40px;
+                                            color: #383838;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            text-align: center;
+                                            border-bottom: 1px solid black;
+                                        }
+                                    }
+                                    .about-me-image {
+                                        height: 40%;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        img {
+                                            width: 160px;
+                                            height: 180px;
+                                            border: double;
+                                        }
+                                    }
+                                    .about-me-infor {
+                                        height: 40%;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        p {
+                                            color: #424242;
+                                            padding: 30px;
+                                        }
+                                    }
+                                }
+                                .social-network {
+                                    width: 100%;
+                                    height: 160px;
+                                    margin-top: 50px;
+                                    background-color: #ffffff;
+                                    .social-network-title {
+                                        width: 100%;
+                                        padding: 20px 0px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        p {
+                                            height: 40px;
+                                            color: #383838;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            text-align: center;
+                                            border-bottom: 1px solid black;
+                                        }
+                                    }
+                                    .social-network-icon {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        a {
+                                            margin-top: 20px;
+                                            margin-left: 10px;
+                                            text-decoration: none;
+                                            margin-right: 10px;
+                                            i {
+                                                opacity: 0.5;
+                                                color: #1b1b1b;
+                                                font-size: 35px;
+                                            }
+                                            &:hover > i {
+                                                opacity: 1;
+                                            }
+                                        }
+                                    }
+                                }
+                                .category {
+                                    width: 100%;
+                                    height: 100%;
+                                    margin-top: 50px;
+                                    background-color: #ffffff;
+                                    .category-title {
+                                        width: 100%;
+                                        padding: 20px 0px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        p {
+                                            height: 40px;
+                                            font-weight: 100;
+                                            color: #383838;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            text-align: center;
+                                            border-bottom: 1px solid black;
+                                        }
+                                    }
+                                    .category-box {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        padding: 5px;
+                                        ul {
+                                            height: auto;
+                                            li {
+                                                list-style: none;
+                                                width: 300px;
+                                                padding: 10px 5px 10px 5px;
+                                                border-bottom: 1px solid #383838;
+                                                a {
+                                                    font-size: 15px;
+                                                    color: #383838;
+                                                    text-decoration: none;
+                                                    &:hover {
+                                                        color: #909090;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //footer
+        .footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #909090;
+            overflow: hidden;
+            background-color: white;
+            .footer-box {
+                width: auto;
+                height: 300px;
+                margin: 0 auto;
+                display: flex;
+                padding: 40px;
+                justify-content: center;
+                position: relative;
+                overflow: hidden;
+                .footer-left {
+                    width: 30%;
+                    height: 350px;
+                    overflow: hidden;
+                    .footer-about-me-title {
+                        width: 100%;
+                        height: auto;
+                        .footer-about-title {
+                            width: 100%;
+                            padding: 20px 0px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            p {
+                                height: 40px;
+                                color: #383838;
+                                display: flex;
+                                font-weight: 100;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                border-bottom: 1px solid black;
+                            }
+                        }
+                    }
+                    .footer-about-me {
+                        width: 100%;
+                        height: auto;
+                        padding: 20px 0px;
+                        p {
+                            color: #424242;
+                        }
+                    }
+                }
+                .footer-center {
+                    width: 30%;
+                    height: 350px;
+                    padding-left: 30px;
+                    overflow: hidden;
+                    .footer-tag-cloud-title {
+                        width: 100%;
+                        height: auto;
+                        .footer-tag-title {
+                            padding: 20px 0px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            p {
+                                height: 40px;
+                                color: #383838;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                border-bottom: 1px solid black;
+                            }
+                        }
+                    }
+                    .footer-tag-cloud {
+                        width: 80%;
+                        height: auto;
+                        padding-left: 10px;
+                        display: inline-block;
+                        a {
+                            color: white;
+                            background-color: #969696;
+                            cursor: pointer;
+                            text-decoration: none;
+                            display: block;
+                            float: left;
+                            font-size: 15px;
+                            padding: 11px 18px;
+                            margin-right: 7px;
+                            margin-top: 7px;
+                            border: 0 solid;
+                            border-color: inherit;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            &:hover {
+                                color: #000000;
+                            }
+                        }
+                    }
+                }
+                .footer-right {
+                    width: 30%;
+                    height: 350px;
+                    position: relative;
+                    overflow: hidden;
+                    .footer-recent-post {
+                        width: 100%;
+                        height: auto;
+                        .footer-recent-post-title {
+                            padding: 20px 0px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            p {
+                                height: 40px;
+                                color: #383838;
+                                display: flex;
+                                border-bottom: 1px solid black;
+                            }
+                        }
+                        .footer-recent-post-list {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            padding: 5px;
+                            ul {
+                                height: auto;
+                                li {
+                                    list-style: none;
+                                    width: 300px;
+                                    padding: 5px 5px 10px 5px;
+                                    border-bottom: 1px solid #383838;
+                                    a {
+                                        font-size: 15px;
+                                        color: #383838;
+                                        text-decoration: none;
+                                        &:hover {
+                                            color: #909090;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .back-to-top {
+                    width: 50px;
+                    height: 50px;
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    background-color: #333;   
+                    border-radius: 5px;
+                    text-align: center;
+                    display: none; /* Ban đầu ẩn nút đi */
+                    z-index: 1000;
+                    a{
+                        cursor: pointer;
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        text-decoration: none;
+                        font-size: 15px;
+                        padding: 10px 15px;
+                    }
+                    &:hover {
+                        background-color: #555;
+                    }
+                }
+            }
+        }
+        //endfooter
+    }
+}
+//style total
+body.style-total-page {
+    width: 100%;
+    height: auto;
+    .container-parent {
+        width: 100%;
+        height: auto;
+        .body-content {
+            width: 100%;
+            height: auto;
+            .content {
+                width: 1200px;
+                height: auto;
+                .travel-trip-wrapper {
+                    width: 100%;
+                    height: auto;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    background-image: url("/public/image/anhbia.jpg");
+                    background-position: top center;
+                    background-repeat: repeat-y;
+                    background-size: cover;
+                    .travel-trip-header {
+                        width: 100%;
+                        height: 650px;
+                        margin-top: 60px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        background-image: url("/public/image/banner1.jpg");
+                    }
+                    .travel-trip-box {
+                        width: 1200px;
+                        margin-top: 20px;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        .travel-trip-box-left {
+                            width: 65%;
+                            display: block;
+                            overflow: hidden;
+                            background-color: white;
+                            .travel-trip-back-home {
+                                width: 100%;
+                                height: auto;
+                                padding-top: 20px;
+                                ul {
+                                    width: 100%;
+                                    height: 30px;
+                                    display: flex;
+                                    .back-home {
+                                        width: 90px;
+                                        list-style: none;
+                                        margin-right: 20px;
+                                        a {
+                                            text-decoration: none;
+                                            color: #2183df;
+                                            &:hover {
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                    .post {
+                                        width: 90px;
+                                    }
+                                }
+                            }
+                            .travel-trip-title {
+                                h1 {
+                                    font-size: 35px;
+                                    color: #424242;
+                                }
+                            }
+                            .travel-trip-content {
+                                padding: 15px;
+                                h2 {
+                                    font-size: 25px;
+                                }
+                                h3 {
+                                    text-decoration: underline;
+                                }
+                                .image-trip {
+                                    width: 100%;
+                                    img {
+                                        width: 100%;
+                                    }
+                                    figcaption {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                        .travel-trip-box-right {
+                            width: 30%;
+                            margin-left: 60px;
+                            overflow: hidden;
+                            .sidebar {
+                                width: 100%;
+                                height: auto;
+                                .tourist-locations {
+                                    width: 100%;
+                                    background-color: #ffffff;
+                                    .tourist-locations-title {
+                                        width: 100%;
+                                        padding: 20px 0px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        p {
+                                            height: 40px;
+                                            color: #383838;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            text-align: center;
+                                            border-bottom: 1px solid black;
+                                        }
+                                    }
+                                    .tourist-locations-list {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        padding: 5px;
+                                        ul {
+                                            height: auto;
+                                            li {
+                                                list-style: none;
+                                                width: 300px;
+                                                cursor: pointer;
+                                                padding: 10px 5px 10px 5px;
+                                                a {
+                                                    font-size: 15px;
+                                                    color: #383838;
+                                                    text-decoration: none;
+                                                    &:hover {
+                                                        color: #909090;
+                                                    }
+                                                }
+                                                &:hover {
+                                                    border-bottom: 1px solid
+                                                        #383838;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .social-network {
+                                    width: 100%;
+                                    height: 160px;
+                                    margin-top: 50px;
+                                    overflow: hidden;
+                                    background-color: #ffffff;
+                                    .social-network-title {
+                                        width: 100%;
+                                        padding: 20px 0px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        p {
+                                            height: 40px;
+                                            color: #383838;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            text-align: center;
+                                            border-bottom: 1px solid black;
+                                        }
+                                    }
+                                    .social-network-icon {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: space-around;
+                                        align-items: center;
+                                        text-align: center;
+                                        a {
+                                            margin-top: 20px;
+                                            margin-left: 10px;
+                                            text-decoration: none;
+                                            i {
+                                                opacity: 0.5;
+                                                color: #1b1b1b;
+                                                font-size: 35px;
+                                            }
+                                            &:hover > i {
+                                                opacity: 1;
+                                            }
+                                        }
+                                    }
+                                }
+                                .category {
+                                    width: 100%;
+                                    height: 100%;
+                                    margin-top: 50px;
+                                    background-color: #ffffff;
+                                    .category-title {
+                                        width: 100%;
+                                        padding: 20px 0px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        p {
+                                            height: 40px;
+                                            color: #383838;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            text-align: center;
+                                            border-bottom: 1px solid black;
+                                        }
+                                    }
+                                    .category-box {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        padding: 5px;
+                                        ul {
+                                            height: auto;
+                                            li {
+                                                list-style: none;
+                                                width: 300px;
+                                                padding: 10px 5px 10px 5px;
+                                                border-bottom: 1px solid #383838;
+                                                a {
+                                                    font-size: 15px;
+                                                    color: #383838;
+                                                    text-decoration: none;
+                                                    &:hover {
+                                                        color: #909090;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//style tour
+body.style-tour-page {
+    width: 100%;
+    height: auto;
+    .container-parent {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        .body-content {
+            width: 100%;
+            height: auto;
+            
+            .content {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                .travel-tour-wrapper {
+                    width: 1000px;
+                    overflow: hidden;
+                    margin: 0 auto;
+                    background-image: url("/public/image/anhbia.jpg");
+                    background-position: top center;
+                    background-repeat: repeat-y;
+                    background-size: cover;
+                    .travel-tour-header {
+                        width: 100%;
+                        height: auto;
+                        margin-top: 60px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        background-image: url("/public/image/banner2.jpg");
+                    }
+                    .travel-tour-box {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .travel-tour-box-content {
+                            width: 90%;
+                            padding: 5px 20px 5px 20px;
+                            display: block;
+                            background-color: white;
+                            .travel-tour-back-home {
+                                width: 100%;
+                                height: auto;
+                                padding-top: 20px;
+                                ul {
+                                    width: 100%;
+                                    height: 30px;
+                                    display: flex;
+                                    .back-home {
+                                        width: 90px;
+                                        list-style: none;
+                                        margin-right: 20px;
+                                        a {
+                                            text-decoration: none;
+                                            color: #2183df;
+                                            &:hover {
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                    .post {
+                                        width: 90px;
+                                    }
+                                }
+                            }
+                            .travel-tour-title {
+                                h1 {
+                                    font-size: 35px;
+                                    color: #424242;
+                                }
+                            }
+                            .travel-tour-content {
+                                padding: 50px;
+                                h2 {
+                                    font-size: 25px;
+                                }
+                                h3 {
+                                    text-decoration: underline;
+                                }
+                                .image-tour {
+                                    width: 100%;
+                                    img {
+                                        width: 100%;
+                                    }
+                                    figcaption {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        font-size: 10px;
+                                    } 
+                                }
+                                p{
+                                    color:#424242;
+                                }
+                                .travel-tour-list{
+                                    background-color: #f3f8fb;
+                                    h2{
+                                        font-size: 18px;
+                                        color:#383838;
+                                    }
+                                    ul{
+                                        padding-top: 10px;
+                                        padding-left: 50px;
+                                        li{
+                                            padding: 15px;
+                                            a{
+                                                font-size: 16px;
+                                                color: #2073f9;
+                                            }
+                                        }
+                                    }
+                                }
+                                h2{
+                                    padding: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+                //footer
+                .footer {
+                    position: relative;
+                    bottom: 0;
+                    width: 100%;
+                    border-top: 1px solid #909090;
+                    overflow: hidden;
+                    background-color: white;
+                    .footer-box {
+                        width: auto;
+                        height: 300px;
+                        margin: 0 auto;
+                        display: flex;
+                        padding: 40px;
+                        justify-content: center;
+                        position: relative;
+                        .footer-left {
+                            width: 30%;
+                            height: 350px;
+                            .footer-about-me-title {
+                                width: 100%;
+                                height: auto;
+                                .footer-about-title {
+                                    width: 100%;
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        font-weight: 100;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                            }
+                            .footer-about-me {
+                                width: 100%;
+                                height: auto;
+                                padding: 20px 0px;
+                                p {
+                                    color: #424242;
+                                }
+                            }
+                        }
+                        .footer-center {
+                            width: 30%;
+                            height: 350px;
+                            padding-left: 30px;
+                            .footer-tag-cloud-title {
+                                width: 100%;
+                                height: auto;
+                                .footer-tag-title {
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                            }
+                            .footer-tag-cloud {
+                                width: 80%;
+                                height: auto;
+                                padding-left: 10px;
+                                display: inline-block;
+                                a {
+                                    color: white;
+                                    background-color: #969696;
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                    display: block;
+                                    float: left;
+                                    font-size: 15px;
+                                    padding: 11px 18px;
+                                    margin-right: 7px;
+                                    margin-top: 7px;
+                                    border: 0 solid;
+                                    border-color: inherit;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;
+                                    &:hover {
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                        }
+                        .footer-right {
+                            width: 30%;
+                            height: 350px;
+                            position: relative;
+                            .footer-recent-post {
+                                width: 100%;
+                                height: auto;
+                                .footer-recent-post-title {
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                                .footer-recent-post-list {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    padding: 5px;
+                                    ul {
+                                        height: auto;
+                                        li {
+                                            list-style: none;
+                                            width: 300px;
+                                            padding: 5px 5px 10px 5px;
+                                            border-bottom: 1px solid #383838;
+                                            a {
+                                                font-size: 15px;
+                                                color: #383838;
+                                                text-decoration: none;
+                                                &:hover {
+                                                    color: #909090;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //endfooter
+    }
+}
+//style cuisine
+body.style-cuisine-page {
+    width: 100%;
+    height: auto;
+    .container-parent {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        .body-content {
+            width: 100%;
+            height: auto;
+            
+            .content {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                .cuisine-wrapper {
+                    width: 1100px;
+                    height: auto;
+                    overflow: hidden;        
+                    margin: 0 auto;
+                    background-image: url("/public/image/anhbia.jpg");
+                    background-position: top center;
+                    background-repeat: repeat-y;
+                    background-size: cover;
+                    .cuisine-header {
+                        width: 100%;
+                        height: 650px;
+                        margin-top: 60px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        background-image: url("/public/image/bannerAmThuc.jpg");
+                    }
+                    .cuisine-box {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .cuisine-box-content{
+                            width: 100%;
+                            height: auto;
+                            padding: 5px 20px 5px 20px;
+                            display: block;
+                            background-color: white;
+                            .cuisine-back-home {
+                                width: 100%;
+                                height: auto;
+                                padding-top: 20px;
+                                ul {
+                                    width: 100%;
+                                    height: 30px;
+                                    display: flex;
+                                    .back-home {
+                                        width: 90px;
+                                        list-style: none;
+                                        margin-right: 20px;
+                                        a {
+                                            text-decoration: none;
+                                            color: #2183df;
+                                            &:hover {
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                    .post {
+                                        width: 90px;
+                                    }
+                                }
+                            }
+                            .cuisine-title {
+                                h1 {
+                                    font-size: 35px;
+                                    color: #424242;
+                                }
+                            }
+                            .cuisine-content {
+                                padding: 50px;
+                                h2 {
+                                    font-size: 40px;
+                                    font-size: 25px;
+                                }
+                                h3 {
+                                    text-decoration: underline;
+                                }
+                                .image-cuisine {
+                                    width: 100%;
+                                    img {
+                                        width: 100%;
+                                    }
+                                    figcaption {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        font-size: 10px;
+                                    } 
+                                }
+                                p{
+                                    color:#424242;
+                                }
+                                .cuisine-list{
+                                    background-color: #f3f8fb;
+                                    h2{
+                                        font-size: 18px;
+                                        color:#383838;
+                                    }
+                                    ul{
+                                        padding-top: 10px;
+                                        padding-left: 50px;
+                                        li{
+                                            padding: 15px;
+                                            a{
+                                                font-size: 16px;
+                                                color: #2073f9;
+                                            }
+                                        }
+                                    }
+                                }
+                                h2{
+                                    padding: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+                //footer
+                .footer {
+                    position: relative;
+                    bottom: 0;
+                    width: 100%;
+                    border-top: 1px solid #909090;
+                    overflow: hidden;
+                    background-color: white;
+                    .footer-box {
+                        width: auto;
+                        height: 300px;
+                        margin: 0 auto;
+                        display: flex;
+                        padding: 40px;
+                        justify-content: center;
+                        position: relative;
+                        .footer-left {
+                            width: 30%;
+                            height: 350px;
+                            .footer-about-me-title {
+                                width: 100%;
+                                height: auto;
+                                .footer-about-title {
+                                    width: 100%;
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        font-weight: 100;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                            }
+                            .footer-about-me {
+                                width: 100%;
+                                height: auto;
+                                padding: 20px 0px;
+                                p {
+                                    color: #424242;
+                                }
+                            }
+                        }
+                        .footer-center {
+                            width: 30%;
+                            height: 350px;
+                            padding-left: 30px;
+                            .footer-tag-cloud-title {
+                                width: 100%;
+                                height: auto;
+                                .footer-tag-title {
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                            }
+                            .footer-tag-cloud {
+                                width: 80%;
+                                height: auto;
+                                padding-left: 10px;
+                                display: inline-block;
+                                a {
+                                    color: white;
+                                    background-color: #969696;
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                    display: block;
+                                    float: left;
+                                    font-size: 15px;
+                                    padding: 11px 18px;
+                                    margin-right: 7px;
+                                    margin-top: 7px;
+                                    border: 0 solid;
+                                    border-color: inherit;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;
+                                    &:hover {
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                        }
+                        .footer-right {
+                            width: 30%;
+                            height: 350px;
+                            position: relative;
+                            .footer-recent-post {
+                                width: 100%;
+                                height: auto;
+                                .footer-recent-post-title {
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                                .footer-recent-post-list {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    padding: 5px;
+                                    ul {
+                                        height: auto;
+                                        li {
+                                            list-style: none;
+                                            width: 300px;
+                                            padding: 5px 5px 10px 5px;
+                                            border-bottom: 1px solid #383838;
+                                            a {
+                                                font-size: 15px;
+                                                color: #383838;
+                                                text-decoration: none;
+                                                &:hover {
+                                                    color: #909090;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //endfooter
+    }
+}
+//style gallery
+body.style-gallery-page {
+    width: 100%;
+    height: auto;
+    .container-parent {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        .body-content {
+            width: 100%;
+            height: auto;   
+            .content {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                .gallery-wrapper{
+                    width: 1000px;
+                    overflow: hidden;
+                    height: auto;
+                    margin: 0 auto;
+                    background-image: url("/public/image/anhbia.jpg");
+                    background-position: top center;
+                    background-repeat: repeat-y;
+                    background-size: cover;
+                    .gallery-header {
+                        width: 100%;
+                        height: 650px;
+                        margin-top: 60px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        background-image: url("/public/image/banner3.jpg");
+                    }
+                    .gallery-box {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        overflow: hidden;
+                        .gallery-box-content {
+                            width: 90%;
+                            height: auto;
+                            padding: 5px 20px 5px 20px;
+                            display: block;
+                            background-color: white;
+                            .gallery-back-home {
+                                width: 100%;
+                                height: auto;
+                                padding-top: 20px;
+                                ul {
+                                    width: 100%;
+                                    height: 30px;
+                                    display: flex;
+                                    .back-home {
+                                        width: 12%;
+                                        list-style: none;
+                                        margin-right: 20px;
+                                        a {
+                                            text-decoration: none;
+                                            color: #2183df;
+                                            &:hover {
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                    .post {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            .gallery-title {
+                                h1 {
+                                    font-size: 35px;
+                                    color: #424242;
+                                }
+                            }
+                            .gallery-content {
+                                padding: 50px;
+                                h2 {
+                                    text-decoration: underline;
+                                    font-size: 25px;
+                                }
+                                h3 {
+                                    text-decoration: underline;
+                                }
+                                .image-gallery {
+                                    width: 100%;
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                                p{
+                                    color:#424242;
+                                }
+                                .gallery{
+                                    width: 100%;
+                                    height: auto;
+                                    margin-bottom: 50px;
+                                    .gallery-cuisen{
+                                        display: grid;
+                                        grid-template-columns: repeat(3, 1fr); 
+                                        grid-template-rows: repeat(2, auto); 
+                                        gap: 10px;
+                                        padding: 10px; 
+                                        margin-bottom: 20px;
+                                        .gallery-cuisen-item{
+                                            width: 100%;
+                                            height: auto;
+                                            img{
+                                                width: 100%;
+                                                height: 221.95px;
+                                                display: block;
+                                                object-fit: cover;
+                                            }
+                                        }
+                                    }
+                                    .gallery-travelTour{
+                                        display: grid;
+                                        grid-template-columns: repeat(3, 1fr); 
+                                        grid-template-rows: repeat(2, auto); 
+                                        gap: 10px;
+                                        padding: 10px; 
+                                        margin-bottom: 20px;
+                                        .gallery-travelTour-item{
+                                            width: 100%;
+                                            height: auto;
+                                            img{
+                                                width: 100%;
+                                                height: 221.95px;
+                                                display: block;
+                                                object-fit: cover;
+                                            }
+                                        }
+                                    }
+                                    .gallery-lifeStyle{
+                                        display: grid;
+                                        grid-template-columns: repeat(3, 1fr); 
+                                        grid-template-rows: repeat(2, auto); 
+                                        gap: 10px;
+                                        padding: 10px; 
+                                        margin-bottom: 20px;
+                                        .gallery-lifeStyle-item{
+                                            width: 100%;
+                                            height: auto;
+                                            img{
+                                                width: 100%;
+                                                height: 221.95px;
+                                                display: block;
+                                                object-fit: cover;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+                //footer
+                .footer {
+                    position: relative;
+                    bottom: 0;
+                    width: 100%;
+                    border-top: 1px solid #909090;
+                    overflow: hidden;
+                    background-color: white;
+                    .footer-box {
+                        width: auto;
+                        height: 300px;
+                        margin: 0 auto;
+                        display: flex;
+                        padding: 40px;
+                        justify-content: center;
+                        position: relative;
+                        .footer-left {
+                            width: 30%;
+                            height: 350px;
+                            .footer-about-me-title {
+                                width: 100%;
+                                height: auto;
+                                .footer-about-title {
+                                    width: 100%;
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        font-weight: 100;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                            }
+                            .footer-about-me {
+                                width: 100%;
+                                height: auto;
+                                padding: 20px 0px;
+                                p {
+                                    color: #424242;
+                                }
+                            }
+                        }
+                        .footer-center {
+                            width: 30%;
+                            height: 350px;
+                            padding-left: 30px;
+                            .footer-tag-cloud-title {
+                                width: 100%;
+                                height: auto;
+                                .footer-tag-title {
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                            }
+                            .footer-tag-cloud {
+                                width: 80%;
+                                height: auto;
+                                padding-left: 10px;
+                                display: inline-block;
+                                a {
+                                    color: white;
+                                    background-color: #969696;
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                    display: block;
+                                    float: left;
+                                    font-size: 15px;
+                                    padding: 11px 18px;
+                                    margin-right: 7px;
+                                    margin-top: 7px;
+                                    border: 0 solid;
+                                    border-color: inherit;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;
+                                    &:hover {
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                        }
+                        .footer-right {
+                            width: 30%;
+                            height: 350px;
+                            position: relative;
+                            .footer-recent-post {
+                                width: 100%;
+                                height: auto;
+                                .footer-recent-post-title {
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                                .footer-recent-post-list {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    padding: 5px;
+                                    ul {
+                                        height: auto;
+                                        li {
+                                            list-style: none;
+                                            width: 300px;
+                                            padding: 5px 5px 10px 5px;
+                                            border-bottom: 1px solid #383838;
+                                            a {
+                                                font-size: 15px;
+                                                color: #383838;
+                                                text-decoration: none;
+                                                &:hover {
+                                                    color: #909090;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //endfooter
+    }
+}
+//style thacDatanla
+body.style-thacDatanla-page {
+    width: 100%;
+    height: auto;
+    .container-parent {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        .body-content {
+            width: 100%;
+            height: auto;
+            
+            .content {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                .thacDatanla-wrapper{
+                    width: 1100px;
+                    height: auto;
+                    overflow: hidden;        
+                    margin: 0 auto;
+                    background-image: url("/public/image/anhbia.jpg");
+                    background-position: top center;
+                    background-repeat: repeat-y;
+                    background-size: cover;
+                    .thacDatanla-header {
+                        width: 100%;
+                        height: 650px;
+                        margin-top: 60px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        background-image: url("/public/image/thacDatanla1.jpg");
+                    }
+                    .thacDatanla-box {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .thacDatanla-box-content{
+                            width: 100%;
+                            height: auto;
+                            padding: 5px 20px 5px 20px;
+                            display: block;
+                            background-color: white;
+                            .thacDatanla-back-home {
+                                width: 100%;
+                                height: auto;
+                                padding-top: 20px;
+                                ul {
+                                    width: 100%;
+                                    height: 30px;
+                                    display: flex;
+                                    .back-home {
+                                        width: 90px;
+                                        list-style: none;
+                                        margin-right: 20px;
+                                        a {
+                                            text-decoration: none;
+                                            color: #2183df;
+                                            &:hover {
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                    .post {
+                                        width: 90px;
+                                    }
+                                }
+                            }
+                            .thacDatanla-title {
+                                h1 {
+                                    font-size: 35px;
+                                    color: #424242;
+                                }
+                            }
+                            .thacDatanla-content {
+                                width: 800px;
+                                margin: 0 auto;
+                                padding: 10px;
+                                h2 {
+                                    font-size: 40px;
+                                    font-size: 25px;
+                                }
+                                h3 {
+                                    text-decoration: underline;
+                                }
+                                .image-thacDatanla {
+                                    width: 100%;
+                                    img {
+                                        width: 100%;
+                                    }
+                                    figcaption {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        font-size: 10px;
+                                    } 
+                                }
+                                p{
+                                    color:#424242;
+                                }
+                                .thacDatanla-list{
+                                    background-color: #f3f8fb;
+                                    h2{
+                                        font-size: 18px;
+                                        color:#383838;
+                                    }
+                                    ul{
+                                        padding-top: 10px;
+                                        padding-left: 50px;
+                                        li{
+                                            padding: 15px;
+                                            a{
+                                                font-size: 16px;
+                                                color: #2073f9;
+                                            }
+                                        }
+                                    }
+                                }
+                                h2{
+                                    padding: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+                //footer
+                .footer {
+                    position: relative;
+                    bottom: 0;
+                    width: 100%;
+                    border-top: 1px solid #909090;
+                    overflow: hidden;
+                    background-color: white;
+                    .footer-box {
+                        width: auto;
+                        height: 300px;
+                        margin: 0 auto;
+                        display: flex;
+                        padding: 40px;
+                        justify-content: center;
+                        position: relative;
+                        .footer-left {
+                            width: 30%;
+                            height: 350px;
+                            .footer-about-me-title {
+                                width: 100%;
+                                height: auto;
+                                .footer-about-title {
+                                    width: 100%;
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        font-weight: 100;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                            }
+                            .footer-about-me {
+                                width: 100%;
+                                height: auto;
+                                padding: 20px 0px;
+                                p {
+                                    color: #424242;
+                                }
+                            }
+                        }
+                        .footer-center {
+                            width: 30%;
+                            height: 350px;
+                            padding-left: 30px;
+                            .footer-tag-cloud-title {
+                                width: 100%;
+                                height: auto;
+                                .footer-tag-title {
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                            }
+                            .footer-tag-cloud {
+                                width: 80%;
+                                height: auto;
+                                padding-left: 10px;
+                                display: inline-block;
+                                a {
+                                    color: white;
+                                    background-color: #969696;
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                    display: block;
+                                    float: left;
+                                    font-size: 15px;
+                                    padding: 11px 18px;
+                                    margin-right: 7px;
+                                    margin-top: 7px;
+                                    border: 0 solid;
+                                    border-color: inherit;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;
+                                    &:hover {
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                        }
+                        .footer-right {
+                            width: 30%;
+                            height: 350px;
+                            position: relative;
+                            .footer-recent-post {
+                                width: 100%;
+                                height: auto;
+                                .footer-recent-post-title {
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                                .footer-recent-post-list {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    padding: 5px;
+                                    ul {
+                                        height: auto;
+                                        li {
+                                            list-style: none;
+                                            width: 300px;
+                                            padding: 5px 5px 10px 5px;
+                                            border-bottom: 1px solid #383838;
+                                            a {
+                                                font-size: 15px;
+                                                color: #383838;
+                                                text-decoration: none;
+                                                &:hover {
+                                                    color: #909090;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //endfooter
+    }
+}
+//style quangTruongLamVien
+body.style-quangTruongLamVien-page {
+    width: 100%;
+    height: auto;
+    .container-parent {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        .body-content {
+            width: 100%;
+            height: auto;
+            
+            .content {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                .quangTruongLamVien-wrapper{
+                    width: 1100px;
+                    height: auto;
+                    overflow: hidden;        
+                    margin: 0 auto;
+                    background-image: url("/public/image/anhbia.jpg");
+                    background-position: top center;
+                    background-repeat: repeat-y;
+                    background-size: cover;
+                    .quangTruongLamVien-header {
+                        width: 100%;
+                        height: 650px;
+                        margin-top: 60px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        background-image: url("/public/image/quangTruongLamVien1.jpg");
+                    }
+                    .quangTruongLamVien-box {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .quangTruongLamVien-box-content{
+                            width: 100%;
+                            height: auto;
+                            padding: 5px 20px 5px 20px;
+                            display: block;
+                            background-color: white;
+                            .quangTruongLamVien-back-home {
+                                width: 100%;
+                                height: auto;
+                                padding-top: 20px;
+                                ul {
+                                    width: 100%;
+                                    height: 30px;
+                                    display: flex;
+                                    .back-home {
+                                        width: 90px;
+                                        list-style: none;
+                                        margin-right: 20px;
+                                        a {
+                                            text-decoration: none;
+                                            color: #2183df;
+                                            &:hover {
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                    .post {
+                                        width: 90px;
+                                    }
+                                }
+                            }
+                            .quangTruongLamVien-title {
+                                h1 {
+                                    font-size: 35px;
+                                    color: #424242;
+                                }
+                            }
+                            .quangTruongLamVien-content {
+                                width: 800px;
+                                margin: 0 auto;
+                                padding: 10px;
+                                h2 {
+                                    font-size: 40px;
+                                    font-size: 25px;
+                                }
+                                h3 {
+                                    text-decoration: underline;
+                                }
+                                .image-quangTruongLamVien {
+                                    width: 100%;
+                                    img {
+                                        width: 100%;
+                                    }
+                                    figcaption {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        font-size: 10px;
+                                    } 
+                                }
+                                p{
+                                    color:#424242;
+                                }
+                                .quangTruongLamVien-list{
+                                    background-color: #f3f8fb;
+                                    h2{
+                                        font-size: 18px;
+                                        color:#383838;
+                                    }
+                                    ul{
+                                        padding-top: 10px;
+                                        padding-left: 50px;
+                                        li{
+                                            padding: 15px;
+                                            a{
+                                                font-size: 16px;
+                                                color: #2073f9;
+                                            }
+                                        }
+                                    }
+                                }
+                                h2{
+                                    padding: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+                //footer
+                .footer {
+                    position: relative;
+                    bottom: 0;
+                    width: 100%;
+                    border-top: 1px solid #909090;
+                    overflow: hidden;
+                    background-color: white;
+                    .footer-box {
+                        width: auto;
+                        height: 300px;
+                        margin: 0 auto;
+                        display: flex;
+                        padding: 40px;
+                        justify-content: center;
+                        position: relative;
+                        .footer-left {
+                            width: 30%;
+                            height: 350px;
+                            .footer-about-me-title {
+                                width: 100%;
+                                height: auto;
+                                .footer-about-title {
+                                    width: 100%;
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        font-weight: 100;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                            }
+                            .footer-about-me {
+                                width: 100%;
+                                height: auto;
+                                padding: 20px 0px;
+                                p {
+                                    color: #424242;
+                                }
+                            }
+                        }
+                        .footer-center {
+                            width: 30%;
+                            height: 350px;
+                            padding-left: 30px;
+                            .footer-tag-cloud-title {
+                                width: 100%;
+                                height: auto;
+                                .footer-tag-title {
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                            }
+                            .footer-tag-cloud {
+                                width: 80%;
+                                height: auto;
+                                padding-left: 10px;
+                                display: inline-block;
+                                a {
+                                    color: white;
+                                    background-color: #969696;
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                    display: block;
+                                    float: left;
+                                    font-size: 15px;
+                                    padding: 11px 18px;
+                                    margin-right: 7px;
+                                    margin-top: 7px;
+                                    border: 0 solid;
+                                    border-color: inherit;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;
+                                    &:hover {
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                        }
+                        .footer-right {
+                            width: 30%;
+                            height: 350px;
+                            position: relative;
+                            .footer-recent-post {
+                                width: 100%;
+                                height: auto;
+                                .footer-recent-post-title {
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                                .footer-recent-post-list {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    padding: 5px;
+                                    ul {
+                                        height: auto;
+                                        li {
+                                            list-style: none;
+                                            width: 300px;
+                                            padding: 5px 5px 10px 5px;
+                                            border-bottom: 1px solid #383838;
+                                            a {
+                                                font-size: 15px;
+                                                color: #383838;
+                                                text-decoration: none;
+                                                &:hover {
+                                                    color: #909090;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //endfooter
+    }
+}
+//style hoTuyenLam
+body.style-hoTuyenLam-page {
+    width: 100%;
+    height: auto;
+    .container-parent {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        .body-content {
+            width: 100%;
+            height: auto;
+            
+            .content {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                .hoTuyenLam-wrapper{
+                    width: 1100px;
+                    height: auto;
+                    overflow: hidden;        
+                    margin: 0 auto;
+                    background-image: url("/public/image/anhbia.jpg");
+                    background-position: top center;
+                    background-repeat: repeat-y;
+                    background-size: cover;
+                    .hoTuyenLam-header {
+                        width: 100%;
+                        height: 650px;
+                        margin-top: 60px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        background-image: url("/public/image/hoTuyenLam1.jpg");
+                    }
+                    .hoTuyenLam-box {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .hoTuyenLam-box-content{
+                            width: 100%;
+                            height: auto;
+                            padding: 5px 20px 5px 20px;
+                            display: block;
+                            background-color: white;
+                            .hoTuyenLam-back-home {
+                                width: 100%;
+                                height: auto;
+                                padding-top: 20px;
+                                ul {
+                                    width: 100%;
+                                    height: 30px;
+                                    display: flex;
+                                    .back-home {
+                                        width: 90px;
+                                        list-style: none;
+                                        margin-right: 20px;
+                                        a {
+                                            text-decoration: none;
+                                            color: #2183df;
+                                            &:hover {
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                    .post {
+                                        width: 90px;
+                                    }
+                                }
+                            }
+                            .hoTuyenLam-title {
+                                h1 {
+                                    font-size: 35px;
+                                    color: #424242;
+                                }
+                            }
+                            .hoTuyenLam-content {
+                                width: 800px;
+                                margin: 0 auto;
+                                padding: 10px;
+                                h2 {
+                                    font-size: 40px;
+                                    font-size: 25px;
+                                }
+                                h3 {
+                                    text-decoration: underline;
+                                }
+                                .image-hoTuyenLam {
+                                    width: 100%;
+                                    img {
+                                        width: 100%;
+                                    }
+                                    figcaption {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        font-size: 10px;
+                                    } 
+                                }
+                                p{
+                                    color:#424242;
+                                }
+                                .hoTuyenLam-list{
+                                    background-color: #f3f8fb;
+                                    h2{
+                                        font-size: 18px;
+                                        color:#383838;
+                                    }
+                                    ul{
+                                        padding-top: 10px;
+                                        padding-left: 50px;
+                                        li{
+                                            padding: 15px;
+                                            a{
+                                                font-size: 16px;
+                                                color: #2073f9;
+                                            }
+                                        }
+                                    }
+                                }
+                                h2{
+                                    padding: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+                //footer
+                .footer {
+                    position: relative;
+                    bottom: 0;
+                    width: 100%;
+                    border-top: 1px solid #909090;
+                    overflow: hidden;
+                    background-color: white;
+                    .footer-box {
+                        width: auto;
+                        height: 300px;
+                        margin: 0 auto;
+                        display: flex;
+                        padding: 40px;
+                        justify-content: center;
+                        position: relative;
+                        .footer-left {
+                            width: 30%;
+                            height: 350px;
+                            .footer-about-me-title {
+                                width: 100%;
+                                height: auto;
+                                .footer-about-title {
+                                    width: 100%;
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        font-weight: 100;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                            }
+                            .footer-about-me {
+                                width: 100%;
+                                height: auto;
+                                padding: 20px 0px;
+                                p {
+                                    color: #424242;
+                                }
+                            }
+                        }
+                        .footer-center {
+                            width: 30%;
+                            height: 350px;
+                            padding-left: 30px;
+                            .footer-tag-cloud-title {
+                                width: 100%;
+                                height: auto;
+                                .footer-tag-title {
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                            }
+                            .footer-tag-cloud {
+                                width: 80%;
+                                height: auto;
+                                padding-left: 10px;
+                                display: inline-block;
+                                a {
+                                    color: white;
+                                    background-color: #969696;
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                    display: block;
+                                    float: left;
+                                    font-size: 15px;
+                                    padding: 11px 18px;
+                                    margin-right: 7px;
+                                    margin-top: 7px;
+                                    border: 0 solid;
+                                    border-color: inherit;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;
+                                    &:hover {
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                        }
+                        .footer-right {
+                            width: 30%;
+                            height: 350px;
+                            position: relative;
+                            .footer-recent-post {
+                                width: 100%;
+                                height: auto;
+                                .footer-recent-post-title {
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                                .footer-recent-post-list {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    padding: 5px;
+                                    ul {
+                                        height: auto;
+                                        li {
+                                            list-style: none;
+                                            width: 300px;
+                                            padding: 5px 5px 10px 5px;
+                                            border-bottom: 1px solid #383838;
+                                            a {
+                                                font-size: 15px;
+                                                color: #383838;
+                                                text-decoration: none;
+                                                &:hover {
+                                                    color: #909090;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //endfooter
+    }
+}
+//style dinhLangBiang
+body.style-dinhLangBiang-page {
+    width: 100%;
+    height: auto;
+    .container-parent {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        .body-content {
+            width: 100%;
+            height: auto;
+            
+            .content {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                .dinhLangBiang-wrapper{
+                    width: 1100px;
+                    height: auto;
+                    overflow: hidden;        
+                    margin: 0 auto;
+                    background-image: url("/public/image/anhbia.jpg");
+                    background-position: top center;
+                    background-repeat: repeat-y;
+                    background-size: cover;
+                    .dinhLangBiang-header {
+                        width: 100%;
+                        height: 650px;
+                        margin-top: 60px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        background-image: url("/public/image/dinhLangBiang1.jpg");
+                    }
+                    .dinhLangBiang-box {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .dinhLangBiang-box-content{
+                            width: 100%;
+                            height: auto;
+                            padding: 5px 20px 5px 20px;
+                            display: block;
+                            background-color: white;
+                            .dinhLangBiang-back-home {
+                                width: 100%;
+                                height: auto;
+                                padding-top: 20px;
+                                ul {
+                                    width: 100%;
+                                    height: 30px;
+                                    display: flex;
+                                    .back-home {
+                                        width: 90px;
+                                        list-style: none;
+                                        margin-right: 20px;
+                                        a {
+                                            text-decoration: none;
+                                            color: #2183df;
+                                            &:hover {
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                    .post {
+                                        width: 90px;
+                                    }
+                                }
+                            }
+                            .dinhLangBiang-title {
+                                h1 {
+                                    font-size: 35px;
+                                    color: #424242;
+                                }
+                            }
+                            .dinhLangBiang-content {
+                                width: 800px;
+                                margin: 0 auto;
+                                padding: 10px;
+                                h2 {
+                                    font-size: 40px;
+                                    font-size: 25px;
+                                }
+                                h3 {
+                                    text-decoration: underline;
+                                }
+                                .image-dinhLangBiang {
+                                    width: 100%;
+                                    img {
+                                        width: 100%;
+                                    }
+                                    figcaption {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        font-size: 10px;
+                                    } 
+                                }
+                                p{
+                                    color:#424242;
+                                }
+                                h2{
+                                    padding: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+                //footer
+                .footer {
+                    position: relative;
+                    bottom: 0;
+                    width: 100%;
+                    border-top: 1px solid #909090;
+                    overflow: hidden;
+                    background-color: white;
+                    .footer-box {
+                        width: auto;
+                        height: 300px;
+                        margin: 0 auto;
+                        display: flex;
+                        padding: 40px;
+                        justify-content: center;
+                        position: relative;
+                        .footer-left {
+                            width: 30%;
+                            height: 350px;
+                            .footer-about-me-title {
+                                width: 100%;
+                                height: auto;
+                                .footer-about-title {
+                                    width: 100%;
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        font-weight: 100;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                            }
+                            .footer-about-me {
+                                width: 100%;
+                                height: auto;
+                                padding: 20px 0px;
+                                p {
+                                    color: #424242;
+                                }
+                            }
+                        }
+                        .footer-center {
+                            width: 30%;
+                            height: 350px;
+                            padding-left: 30px;
+                            .footer-tag-cloud-title {
+                                width: 100%;
+                                height: auto;
+                                .footer-tag-title {
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                            }
+                            .footer-tag-cloud {
+                                width: 80%;
+                                height: auto;
+                                padding-left: 10px;
+                                display: inline-block;
+                                a {
+                                    color: white;
+                                    background-color: #969696;
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                    display: block;
+                                    float: left;
+                                    font-size: 15px;
+                                    padding: 11px 18px;
+                                    margin-right: 7px;
+                                    margin-top: 7px;
+                                    border: 0 solid;
+                                    border-color: inherit;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;
+                                    &:hover {
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                        }
+                        .footer-right {
+                            width: 30%;
+                            height: 350px;
+                            position: relative;
+                            .footer-recent-post {
+                                width: 100%;
+                                height: auto;
+                                .footer-recent-post-title {
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                                .footer-recent-post-list {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    padding: 5px;
+                                    ul {
+                                        height: auto;
+                                        li {
+                                            list-style: none;
+                                            width: 300px;
+                                            padding: 5px 5px 10px 5px;
+                                            border-bottom: 1px solid #383838;
+                                            a {
+                                                font-size: 15px;
+                                                color: #383838;
+                                                text-decoration: none;
+                                                &:hover {
+                                                    color: #909090;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //endfooter
+    }
+}
+//style phongCachSong
+body.style-phongCachSong-page {
+    width: 100%;
+    height: auto;
+    .container-parent {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        .body-content {
+            width: 100%;
+            height: auto;
+            
+            .content {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                .phongCachSong-wrapper{
+                    width: 1100px;
+                    height: auto;
+                    overflow: hidden;        
+                    margin: 0 auto;
+                    background-image: url("/public/image/anhbia.jpg");
+                    background-position: top center;
+                    background-repeat: repeat-y;
+                    background-size: cover;
+                    .phongCachSong-header {
+                        width: 100%;
+                        height: 650px;
+                        margin-top: 60px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        background-image: url("/public/image/phongCachSong1.jpg");
+                    }
+                    .phongCachSong-box {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .phongCachSong-box-content{
+                            width: 100%;
+                            height: auto;
+                            padding: 5px 20px 5px 20px;
+                            display: block;
+                            background-color: white;
+                            .phongCachSong-back-home {
+                                width: 100%;
+                                height: auto;
+                                padding-top: 20px;
+                                ul {
+                                    width: 100%;
+                                    height: 30px;
+                                    display: flex;
+                                    .back-home {
+                                        width: 90px;
+                                        list-style: none;
+                                        margin-right: 20px;
+                                        a {
+                                            text-decoration: none;
+                                            color: #2183df;
+                                            &:hover {
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                    .post {
+                                        width: 90px;
+                                    }
+                                }
+                            }
+                            .phongCachSong-title {
+                                h1 {
+                                    font-size: 35px;
+                                    color: #424242;
+                                }
+                            }
+                            .phongCachSong-content {
+                                width: 800px;
+                                margin: 0 auto;
+                                padding: 10px;
+                                h2 {
+                                    font-size: 40px;
+                                    font-size: 25px;
+                                }
+                                h3 {
+                                    text-decoration: underline;
+                                }
+                                .image-phongCachSong {
+                                    width: 100%;
+                                    img {
+                                        width: 100%;
+                                    }
+                                    figcaption {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        font-size: 10px;
+                                    } 
+                                }
+                                p{
+                                    color:#424242;
+                                }
+                                h2{
+                                    padding: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+                //footer
+                .footer {
+                    position: relative;
+                    bottom: 0;
+                    width: 100%;
+                    border-top: 1px solid #909090;
+                    overflow: hidden;
+                    background-color: white;
+                    .footer-box {
+                        width: auto;
+                        height: 300px;
+                        margin: 0 auto;
+                        display: flex;
+                        padding: 40px;
+                        justify-content: center;
+                        position: relative;
+                        .footer-left {
+                            width: 30%;
+                            height: 350px;
+                            .footer-about-me-title {
+                                width: 100%;
+                                height: auto;
+                                .footer-about-title {
+                                    width: 100%;
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        font-weight: 100;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                            }
+                            .footer-about-me {
+                                width: 100%;
+                                height: auto;
+                                padding: 20px 0px;
+                                p {
+                                    color: #424242;
+                                }
+                            }
+                        }
+                        .footer-center {
+                            width: 30%;
+                            height: 350px;
+                            padding-left: 30px;
+                            .footer-tag-cloud-title {
+                                width: 100%;
+                                height: auto;
+                                .footer-tag-title {
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                            }
+                            .footer-tag-cloud {
+                                width: 80%;
+                                height: auto;
+                                padding-left: 10px;
+                                display: inline-block;
+                                a {
+                                    color: white;
+                                    background-color: #969696;
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                    display: block;
+                                    float: left;
+                                    font-size: 15px;
+                                    padding: 11px 18px;
+                                    margin-right: 7px;
+                                    margin-top: 7px;
+                                    border: 0 solid;
+                                    border-color: inherit;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;
+                                    &:hover {
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                        }
+                        .footer-right {
+                            width: 30%;
+                            height: 350px;
+                            position: relative;
+                            .footer-recent-post {
+                                width: 100%;
+                                height: auto;
+                                .footer-recent-post-title {
+                                    padding: 20px 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    p {
+                                        height: 40px;
+                                        color: #383838;
+                                        display: flex;
+                                        border-bottom: 1px solid black;
+                                    }
+                                }
+                                .footer-recent-post-list {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    padding: 5px;
+                                    ul {
+                                        height: auto;
+                                        li {
+                                            list-style: none;
+                                            width: 300px;
+                                            padding: 5px 5px 10px 5px;
+                                            border-bottom: 1px solid #383838;
+                                            a {
+                                                font-size: 15px;
+                                                color: #383838;
+                                                text-decoration: none;
+                                                &:hover {
+                                                    color: #909090;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //endfooter
+    }
+}
+//end style-------------------------------------------------
+
+//---------responsive---------------------------------------
+@media only screen and (min-width: 1174px) and (max-width: 1440px) {
+    .header, .footer {
+      font-size: 18px;
+    }
+    * .container-parent .header .nav-Navigation nav ul {
+        flex-wrap: nowrap;
+    }
+    .container-parent{
+      width: 100%;
+    }
+  
+    .nav-navigation {
+      display: flex;
+      justify-content: space-between;
+    }
+    .blog-wrapper{
+        width: 100%;
+         margin-bottom: 10px;
+        height: 88vh;
+    }
+    .footer-box{
+        width: auto;
+        height: 300px;
+        margin: 0 auto;
+        display: flex;
+        padding: 40px;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;       
+    }
+    * .container-parent .header .wrapper .wrapper-top .auth-container {
+        padding-left: 0px;
+        padding-top: 15px;
+    }
+    * .container-parent .body-content .content .box-content-wrapper .box-content-header {
+        height: 456px;
+        background-size: cover;
+    }
+    body.style-total-page .container-parent .body-content .content {
+        width: 100%;
+    }
+    //travelTip
+    body.style-total-page .container-parent .body-content .content .travel-trip-wrapper{
+        width: 80%;
+    }
+    body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-header {
+        height: 456px;
+        background-size: cover;
+    }
+    body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box{
+        width: auto;
+    }
+    body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box .travel-trip-box-left {
+        width: 100%;
+    }
+    body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box .travel-trip-box-right {
+        display: none;
+    }
+    //footer
+    .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li{
+        width: auto;
+    }
+    //cuisine
+    body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper {
+        width: 80%;
+    }
+    body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-header {
+        background-size: cover;
+        height: 456px;
+    }
+    body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-box {
+        margin-top: 0px;
+    }
+    //gallery
+    body.style-gallery-page .container-parent .body-content .content .gallery-wrapper {
+        width: 80%;
+    }
+    body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-header {
+        background-size: cover;
+        height: 456px;
+    }
+    body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box {
+        margin-top: 0px;
+    }
+    body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box .gallery-box-content {
+        width: 100%;
+    }
+    //travelTour
+    body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper {
+        width: 80%;
+    }
+    body.style-travelTour-page .container-parent .body-content .content .travelTour-wrapper .travelTour-header {
+        background-size: cover;
+        height: 456px;
+    }
+    body.style-travelTour-page .container-parent .body-content .content .travelTour-wrapper .travelTour-box {
+        margin-top: 0px;
+    }
+    body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box .travel-tour-box-content {
+        width: 100%;
+    }
+    //lamvien
+    body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box .quangTruongLamVien-box-content {
+        padding: 5px 40px 5px 20px;
+        width: 80%;
+    }
+    body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box .quangTruongLamVien-box-content .quangTruongLamVien-content {
+        width: 100%;
+    }
+    body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper {
+        width: 100%;
+    }
+    //hoTuyenLam
+    body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box .hoTuyenLam-box-content {
+        padding: 5px 40px 5px 20px;
+        width: 80%;
+    }
+    body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box .hoTuyenLam-box-content .hoTuyenLam-content {
+        width: 100%;
+    }
+    body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper {
+        width: 100%;
+    }
+    //thacDatanla
+    body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content {
+        padding: 5px 40px 5px 20px;
+        width: 80%;
+    }
+    body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content {
+        width: 100%;
+    }
+    body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper {
+        width: 100%;
+    }
+    //dinhLangBiang
+    body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box .dinhLangBiang-box-content {
+        padding: 5px 40px 5px 20px;
+        width: 80%;
+    }
+    body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box .dinhLangBiang-box-content .dinhLangBiang-content {
+        width: 100%;
+    }
+    body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper {
+        width: 100%;
+    }
+    //phongCachSong
+    body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content {
+        padding: 5px 40px 5px 20px;
+        width: 80%;
+    }
+    body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content .phongCachSong-content {
+        width: 100%;
+    }
+    body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper {
+        width: 100%;
+    }
+    
+}
+
+//cho tablet
+@media only screen and (min-width: 768px) and (max-width: 1173px) {
+    .header, .footer {
+      font-size: 18px;
+    }
+    * .container-parent .header .nav-Navigation nav ul {
+        flex-wrap: nowrap;
+    }
+    .container-parent{
+      width: 100%;
+    }
+    * .container-parent .body-content .content .box-content-wrapper .content-blog {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    * .container-parent .body-content .content .blog-box .blog-content {
+        width: auto;
+    }
+    * .container-parent .body-content .content .blog-box .blog-content .blog-content-left {
+        width: 90%;
+    }
+    * .container-parent .body-content .content .blog-box .blog-content .blog-content-right {
+        display: none;
+    }
+    .nav-navigation {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .blog-wrapper{
+        width: 100%;
+         margin-bottom: 10px;
+        height: 88vh;
+    }
+    .footer-box{
+        width: auto;
+        height: 300px;
+        margin: 0 auto;
+        display: flex;
+        padding: 40px;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;       
+    }
+    * .container-parent .header .wrapper .wrapper-top .auth-container {
+        padding-left: 0px;
+        padding-top: 15px;
+    }
+    * .container-parent .body-content .content .box-content-wrapper .box-content-header {
+        height: 456px;
+    }
+    //travelTip
+    body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-header {
+        height: 456px;
+        background-size: contain;
+    }
+    body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box{
+        width: auto;
+    }
+    body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box .travel-trip-box-left {
+        width: 100%;
+    }
+    body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box .travel-trip-box-right {
+        display: none;
+    }
+    //footer
+    .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li{
+        width: auto;
+    }
+    //cuisine
+    body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper
+    {
+        width: 650px;
+        .cuisine-box .cuisine-box-content {
+            padding: 30px;
+            .cuisine-content{
+                padding:0px;
+            }
+        } 
+    }
+    body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper {
+        width: 100%;
+    }
+    body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-header {
+        background-size: contain;
+        height: 456px;
+    }
+    body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-box {
+        margin-top: 0px;
+    }
+    //gallery
+    body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box{
+        justify-content:normal;
+        .gallery-box-content{
+            width: 76%;
+            .gallery-content{
+                padding: 0px;
+            }
+        } 
+    }
+    //travel tour
+    body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box .travel-tour-box-content {
+        padding: 0px;
+    }
+    body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper{
+        width: 100%;
+    }
+    body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box {
+        justify-content: center;
+    }
+    body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box .travel-tour-box-content .travel-tour-content {
+        padding: 0px;
+    }
+    
+}
+
+//cho mobile
+@media only screen and (min-width:391px) and (max-width:767px) {
+    * .container-parent .header .wrapper .wrapper-top .logo-blog .blog-title img {
+        width: 220px;
+    }
+    * .container-parent .header .wrapper .wrapper-top .auth-container {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-thumbnail .blog-image a img {
+        width: 95%;
+    }
+    * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-content-inner .blog-content-inner-wrapper {
+        padding-right: 15px;
+    }
+    * .container-parent .header .nav-Navigation nav ul {
+        justify-content: normal;
+    }
+    * .container-parent .body-content .content .box-content-wrapper .box-content-header {
+        height: 285px;
+    }
+    * .container-parent .body-content .content .box-content-wrapper .content-blog {
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    * .container-parent .body-content .content .blog-box {
+        margin-top: 0px;
+    }
+    * .container-parent .body-content .content .blog-box .blog-content .blog-content-right {
+        display: none;
+    }
+    * .container-parent .body-content .content .blog-box .blog-content {
+        width: 100%;
+    }
+    * .container-parent .body-content .content .blog-box .blog-content .blog-content-left {
+        width: 100%;
+    }
+    * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-content-inner .blog-content-inner-wrapper {
+        width: 100%;
+        margin-left: 88px;
+    }
+    .footer {
+        font-size: 18px;
+      }
+    .footer-box{
+        width: auto;
+        height: 300px;
+        margin: 0 auto;
+        display: flex;
+        padding: 40px;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;       
+    }
+    * .container-parent .footer .footer-box{
+        padding: 20px;
+    }
+    *.container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li{
+        width: auto;
+    }
+    * .container-parent .footer .footer-box .footer-center {
+        padding-left: 0px;
+    }
+    //travel tip
+    body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-header {
+        height: 222px;
+        background-size: contain;
+    }
+    body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box{
+        width: auto;
+    }
+    body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box .travel-trip-box-left {
+        width: 100%;
+    }
+    body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box .travel-trip-box-right {
+        display: none;
+    }
+    //footer
+    .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li{
+        width: auto;
+    }
+    //cuisine
+    body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper
+    {
+        width: 650px;
+        .cuisine-box .cuisine-box-content {
+            padding: 30px;
+            .cuisine-content{
+                padding:0px;
+            }
+        } 
+    }
+    body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper {
+        width: 100%;
+    }
+    body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-header {
+        height: 222px;
+        background-size: contain;
+    }
+    body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-box {
+        margin-top: 0px;
+    }
+    //gallery
+    body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box .gallery-box-content .gallery-back-home ul .back-home {
+        width: 32%;
+    }
+    body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box{
+        justify-content:normal;
+        .gallery-box-content{
+            width: 39%;
+            .gallery-content{
+                padding: 0px;
+            }
+        } 
+    }
+    
+    body.style-gallery-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+        width: auto;
+        padding: 2px;
+        font-size: 5px;
+    }
+    //travel tour
+    body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box .travel-tour-box-content {
+        padding: 20px;
+        width: 430px;
+    }
+    body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper{
+        width: 100%;
+    }
+    body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box {
+        justify-content: center;
+    }
+    body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box .travel-tour-box-content .travel-tour-content {
+        padding: 0px;
+    }
+    body.style-cuisine-page .container-parent .footer .footer-box {
+        padding: 20px;
+    }
+    body.style-gallery-page .container-parent .footer .footer-box .footer-center {
+        padding: 0px 10px;
+    }
+    body.style-cuisine-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+        padding-left: 0px;
+    }
+    body.style-cuisine-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+        width: auto;
+        padding: 2px;
+        font-size: 5px;
+    }
+    body.style-tour-page .container-parent .footer .footer-box .footer-center {
+        padding: 0px 10px;
+    }
+    body.style-tour-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+        padding: 0px;
+    }
+    body.style-tour-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+        width: auto;
+        padding: 2px;
+        font-size: 5px;
+    }
+    //lamvien
+    body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-header {
+        width: 430px;
+        height: 292px;
+        margin-top: 20px;
+        background-size: contain;
+    }
+
+    body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box {
+        margin-top: 0;
+        display: block;
+    }
+    body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box .quangTruongLamVien-box-content .quangTruongLamVien-content h2 {
+        width: 388px;
+        font-size:20px;
+    }
+    body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box .quangTruongLamVien-box-content {
+        width: 36%;
+    }
+    body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box .quangTruongLamVien-box-content .quangTruongLamVien-content {
+        width: auto;
+    }
+    body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-center {
+        padding: 0px 10px;
+    }
+    body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+        padding: 0px;
+    }
+    body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+        width: auto;
+        padding: 2px;
+        font-size: 5px;
+    }
+    //hotuyenlam
+    body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-header {
+        width: 430px;
+        height: 292px;
+        margin-top: 20px;
+        background-size: contain;
+    }
+
+    body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box {
+        margin-top: 0;
+        display: block;
+    }
+    body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box .hoTuyenLam-box-content .hoTuyenLam-content h2 {
+        width: 388px;
+        font-size:20px;
+    }
+    body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box .hoTuyenLam-box-content {
+        width: 36%;
+    }
+    body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box .hoTuyenLam-box-content .hoTuyenLam-content {
+        width: auto;
+    }
+    body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-center {
+        padding: 0px 10px;
+    }
+    body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+        padding: 0px;
+    }
+    body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+        width: auto;
+        padding: 2px;
+        font-size: 5px;
+    }
+     //thacDatanla
+     body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-header {
+        width: 430px;
+        height: 292px;
+        margin-top: 20px;
+        background-size: contain;
+    }
+
+    body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box {
+        margin-top: 0;
+        display: block;
+    }
+    body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content h2 {
+        width: 388px;
+        font-size:20px;
+    }
+    body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content {
+        width: 36%;
+    }
+    body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content {
+        width: auto;
+    }
+    body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center {
+        padding: 0px 10px;
+    }
+    body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+        padding: 0px;
+    }
+    body.style-thacDatanla-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+        width: auto;
+        padding: 2px;
+        font-size: 5px;
+    } 
+    //dinhLangBiang
+    body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-header {
+       width: 430px;
+       height: 292px;
+       margin-top: 20px;
+       background-size: contain;
+   }
+
+   body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box {
+       margin-top: 0;
+       display: block;
+   }
+   body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box .dinhLangBiang-box-content .dinhLangBiang-content h2 {
+       width: 388px;
+       font-size:20px;
+   }
+   body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box .dinhLangBiang-box-content {
+       width: 36%;
+   }
+   body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box .dinhLangBiang-box-content .dinhLangBiang-content {
+       width: auto;
+   }
+   body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-center {
+       padding: 0px 10px;
+   }
+   body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+       padding: 0px;
+   }
+   body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+       width: auto;
+       padding: 2px;
+       font-size: 5px;
+   }
+   //thacDatanla
+   body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-header {
+    width: 430px;
+    height: 292px;
+    margin-top: 20px;
+    background-size: contain;
+}
+
+body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box {
+    margin-top: 0;
+    display: block;
+}
+body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content h2 {
+    width: 388px;
+    font-size:20px;
+}
+body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content {
+    width: 36%;
+}
+body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content {
+    width: auto;
+}
+body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+}
+body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding: 0px;
+}
+body.style-thacDatanla-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+} 
+//phongCachSong
+body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-header {
+   width: 430px;
+   height: 292px;
+   margin-top: 20px;
+   background-size: contain;
+}
+
+body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box {
+   margin-top: 0;
+   display: block;
+}
+body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content .phongCachSong-content h2 {
+   width: 388px;
+   font-size:20px;
+}
+body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content {
+   width: 36%;
+}
+body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content .phongCachSong-content {
+   width: auto;
+}
+body.style-phongCachSong-page .container-parent .footer .footer-box .footer-center {
+   padding: 0px 10px;
+}
+body.style-phongCachSong-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+   padding: 0px;
+}
+body.style-phongCachSong-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+   width: auto;
+   padding: 2px;
+   font-size: 5px;
+}
+}
+@media (max-width:390px) {
+    * .container-parent .header .wrapper .wrapper-top .logo-blog .blog-title img {
+        width: 220px;
+    }
+    * .container-parent .header .wrapper .wrapper-top .auth-container {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-thumbnail .blog-date {
+        width: 24%;
+    }
+    * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-thumbnail .blog-image {
+        width: 76%;
+    }
+    * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-thumbnail .blog-image a img {
+        width: 95%;
+    }
+    * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-content-inner .blog-content-inner-wrapper {
+        padding-right: 15px;
+    }
+    * .container-parent .header .nav-Navigation nav ul {
+        justify-content: normal;
+    }
+    * .container-parent .body-content .content .box-content-wrapper .box-content-header {
+        height: 285px;
+    }
+    * .container-parent .body-content .content .box-content-wrapper .content-blog {
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    * .container-parent .body-content .content .blog-box {
+        margin-top: 0px;
+    }
+    * .container-parent .body-content .content .blog-box .blog-content .blog-content-right {
+        display: none;
+    }
+    * .container-parent .body-content .content .blog-box .blog-content {
+        width: 100%;
+    }
+    * .container-parent .body-content .content .blog-box .blog-content .blog-content-left {
+        width: 100%;
+    }
+    * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-content-inner .blog-content-inner-wrapper {
+        width: 100%;
+        margin-left: 88px;
+    }
+    .footer {
+        font-size: 18px;
+      }
+    .footer-box{
+        width: auto;
+        height: 300px;
+        margin: 0 auto;
+        display: flex;
+        padding: 40px;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;       
+    }
+    * .container-parent .footer .footer-box{
+        padding: 20px;
+    }
+    *.container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li{
+        width: auto;
+    }
+    * .container-parent .footer .footer-box .footer-center {
+        padding-left: 0px;
+    }
+    //travel tip
+    body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-header {
+        height: 222px;
+        background-size: contain;
+    }
+    body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box{
+        width: auto;
+    }
+    body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box .travel-trip-box-left {
+        width: 100%;
+    }
+    body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box .travel-trip-box-right {
+        display: none;
+    }
+    //footer
+    .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li{
+        width: auto;
+    }
+    //cuisine
+    body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper
+    {
+        width: 650px;
+        .cuisine-box .cuisine-box-content {
+            padding: 30px;
+            .cuisine-content{
+                padding:0px;
+            }
+        } 
+    }
+    body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper {
+        width: 100%;
+    }
+    body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-header {
+        height: 222px;
+        background-size: contain;
+    }
+    body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-box {
+        margin-top: 0px;
+    }
+    //gallery
+    body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box .gallery-box-content .gallery-back-home ul .back-home {
+        width: 32%;
+    }
+    body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box{
+        justify-content:normal;
+        .gallery-box-content{
+            width: 39%;
+            .gallery-content{
+                padding: 0px;
+            }
+        } 
+    }
+    
+    body.style-gallery-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+        width: auto;
+        padding: 2px;
+        font-size: 5px;
+    }
+    //travel tour
+    body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box .travel-tour-box-content {
+        padding: 20px;
+        width: 430px;
+    }
+    body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper{
+        width: 100%;
+    }
+    body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box {
+        justify-content: center;
+    }
+    body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box .travel-tour-box-content .travel-tour-content {
+        padding: 0px;
+    }
+    body.style-cuisine-page .container-parent .footer .footer-box {
+        padding: 20px;
+    }
+    body.style-gallery-page .container-parent .footer .footer-box .footer-center {
+        padding: 0px 10px;
+    }
+    body.style-cuisine-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+        padding-left: 0px;
+    }
+    body.style-cuisine-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+        width: auto;
+        padding: 2px;
+        font-size: 5px;
+    }
+    body.style-tour-page .container-parent .footer .footer-box .footer-center {
+        padding: 0px 10px;
+    }
+    body.style-tour-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+        padding: 0px;
+    }
+    body.style-tour-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+        width: auto;
+        padding: 2px;
+        font-size: 5px;
+    }
+
+    //lamvien
+    body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-header {
+        width: 430px;
+        height: 292px;
+        margin-top: 20px;
+        background-size: contain;
+    }
+
+    body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box {
+        margin-top: 0;
+        display: block;
+    }
+    body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box .quangTruongLamVien-box-content .quangTruongLamVien-content h2 {
+        width: 388px;
+        font-size:20px;
+    }
+    body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box .quangTruongLamVien-box-content {
+        width: 36%;
+    }
+    body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box .quangTruongLamVien-box-content .quangTruongLamVien-content {
+        width: auto;
+    }
+    body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-center {
+        padding: 0px 10px;
+    }
+    body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+        padding: 0px;
+    }
+    body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+        width: auto;
+        padding: 2px;
+        font-size: 5px;
+    }
+    //hotuyenlam
+    body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-header {
+        width: 430px;
+        height: 292px;
+        margin-top: 20px;
+        background-size: contain;
+    }
+
+    body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box {
+        margin-top: 0;
+        display: block;
+    }
+    body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box .hoTuyenLam-box-content .hoTuyenLam-content h2 {
+        width: 388px;
+        font-size:20px;
+    }
+    body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box .hoTuyenLam-box-content {
+        width: 36%;
+    }
+    body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box .hoTuyenLam-box-content .hoTuyenLam-content {
+        width: auto;
+    }
+    body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-center {
+        padding: 0px 10px;
+    }
+    body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+        padding: 0px;
+    }
+    body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+        width: auto;
+        padding: 2px;
+        font-size: 5px;
+    }
+     //thacDatanla
+     body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-header {
+        width: 430px;
+        height: 292px;
+        margin-top: 20px;
+        background-size: contain;
+    }
+
+    body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box {
+        margin-top: 0;
+        display: block;
+    }
+    body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content h2 {
+        width: 388px;
+        font-size:20px;
+    }
+    body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content {
+        width: 36%;
+    }
+    body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content {
+        width: auto;
+    }
+    body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center {
+        padding: 0px 10px;
+    }
+    body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+        padding: 0px;
+    }
+    body.style-thacDatanla-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+        width: auto;
+        padding: 2px;
+        font-size: 5px;
+    } 
+    //dinhLangBiang
+    body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-header {
+       width: 430px;
+       height: 292px;
+       margin-top: 20px;
+       background-size: contain;
+   }
+
+   body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box {
+       margin-top: 0;
+       display: block;
+   }
+   body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box .dinhLangBiang-box-content .dinhLangBiang-content h2 {
+       width: 388px;
+       font-size:20px;
+   }
+   body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box .dinhLangBiang-box-content {
+       width: 36%;
+   }
+   body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box .dinhLangBiang-box-content .dinhLangBiang-content {
+       width: auto;
+   }
+   body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-center {
+       padding: 0px 10px;
+   }
+   body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+       padding: 0px;
+   }
+   body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+       width: auto;
+       padding: 2px;
+       font-size: 5px;
+   }
+   //thacDatanla
+   body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-header {
+    width: 430px;
+    height: 292px;
+    margin-top: 20px;
+    background-size: contain;
+    }
+
+    body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box {
+        margin-top: 0;
+        display: block;
+    }
+    body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content h2 {
+        width: 388px;
+        font-size:20px;
+    }
+    body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content {
+        width: 36%;
+    }
+    body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content {
+        width: auto;
+    }
+    body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center {
+        padding: 0px 10px;
+    }
+    body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+        padding: 0px;
+    }
+    body.style-thacDatanla-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+        width: auto;
+        padding: 2px;
+        font-size: 5px;
+    } 
+    //phongCachSong
+    body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-header {
+    width: 430px;
+    height: 292px;
+    margin-top: 20px;
+    background-size: contain;
+    }
+    body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content .phongCachSong-title h1 {
+        font-size: 17px;
+    }
+    body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box {
+    margin-top: 0;
+    display: block;
+    }
+    body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content .phongCachSong-content h2 {
+    width: 300px;
+    font-size:15px;
+    }
+    body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content .phongCachSong-content p {
+        padding-right: 50px;
+    }
+    body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content .phongCachSong-content .image-phongCachSong img {
+        width: 85%;
+    }
+    body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content {
+    width: 36%;
+    }
+    body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content .phongCachSong-content {
+    width: auto;
+    }
+    body.style-phongCachSong-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+    }
+    body.style-phongCachSong-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding: 0px;
+    }
+    body.style-phongCachSong-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+    }
+    * .container-parent .header .nav-Navigation nav ul li {
+        padding: 0px 0px 23px 10px;
+    }
+}
+
