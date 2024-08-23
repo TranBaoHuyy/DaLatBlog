@@ -19,8 +19,12 @@
                 <i><b><p>Thành phố ngàn hoa Đà Lạt không chỉ là một địa điểm tránh nóng nổi tiếng trong nước mà còn thu hút rất nhiều du khách ngoài nước. Đến với Đà Lạt, bạn vừa có thể trải nghiệm không gian mộng mơ để chill cực chất vừa có thể thưởng thức nền ẩm thực đa dạng và độc đáo với các món ăn đặc sản Đà Lạt.</p><br>
             
                 <h2>1. Địa điểm ăn uống</h2><br>
+                {{-- @foreach($gallaries as $gallery) --}}
+                {{-- <h2>{{ $gallery->title}}</h2> --}}
                 <div class="gallery">
+                    {{-- @foreach($gallery->images as $image) --}}
                     <div class="gallery-cuisen">
+                        {{-- <div class="gallery-cuisen-item"><img src="{{ asset($image->image_path) }}" alt="{{ $gallery->title }}" style="width: 100%; height: auto;"> </div> --}}
                         <div class="gallery-cuisen-item"><img src="{{ asset('image/comNieu.png') }} " alt="comNieu"></div>
                         <div class="gallery-cuisen-item"><img src="{{ asset('image/thitNuongKhoi.png') }} " alt="thitNuongKhoi"></div>
                         <div class="gallery-cuisen-item"><img src="{{ asset('image/banhMi.png') }} " alt="banhMi"></div>
@@ -28,8 +32,9 @@
                         <div class="gallery-cuisen-item"><img src="{{ asset('image/banhCan.png') }} " alt="banhCan"></div>
                         <div class="gallery-cuisen-item"><img src="{{ asset('image/banhUotLongGa.png') }} " alt="banhUotLongGa"></div>
                     </div>
+                    {{-- @endforeach --}}
                 </div>
-
+                {{-- @endforeach --}}
                 <h2>2. Địa điểm du lịch</h2><br>
                 <div class="gallery">
                     <div class="gallery-travelTour">

@@ -11,11 +11,11 @@
                         <i class="fa fa-calendar" aria-hidden="true"></i>
                         <div class="calendar-time">
                             <p>{{ $blog->created_at->format('d') }}</p>
-                            <p>{{ $blog->created_at->format('F Y') }}</p>
+                           <p>{{ $blog->created_at->format('F Y') }}</p>
                         </div>
                     </div>
                     <div class="blog-image">
-                            <img src="{{ asset($blog->image) }}" alt="{{ $blog->title }}" style="width: 100%;                    height: 340px;">
+                            <img src="{{ asset($blog->image) }}" alt="{{ $blog->title }}" style="width: 100%;height: 340px;">
                     </div>
                 </div>
                 <div class="blog-content-inner">
@@ -24,7 +24,7 @@
                         <h1>{{ $blog->title }}</h1>
                     <p>
                         {{ $blog->content}}
-                    </p>
+                    </p> 
                     <button class="button-read">
                         Xem Thêm
                     </button>
@@ -70,11 +70,6 @@
                 <div class="category"><!--lam category -mcr--->
                     <div class="category-title">
                         <p>THƯ VIỆN</p>
-                        {{-- <ul>
-                            @foreach($categories as $category)
-                                <li>{{ $category->name }}</li>
-                            @endforeach
-                        </ul> --}}
                     </div>
                     <div class="category-box">
                         <ul>

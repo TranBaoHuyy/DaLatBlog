@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Models\Category;
 use Illuminate\Support\Facades\DB;
 use App\Models\Blog;
 use Illuminate\Http\Request;
@@ -57,28 +58,17 @@ class BlogController extends Controller
     }
 
     //end detail
-    //show theo id
-    public function show($id)
-{
-    $blog = Blog::findOrFail($id);
-    return view('blogs.show', compact('blog'));
-}
 
-    
     public function showBlog()
     {
         $blogs = Blog::all();
-        return view('home', ['blogs'=>$blogs]);
+        $categories = Category::all();
+        return view('home',compact('blogs','categories'));
     }
     public function index()
     {
         $blogs = Blog::all();
         return view('blogs.index', compact('blogs'));
-    }
-    public function test()
-    {
-        $blogs = Blog::all();
-        return view('try.test', compact('blogs'));
     }
     public function create()
     {

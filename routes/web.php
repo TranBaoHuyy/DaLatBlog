@@ -7,6 +7,7 @@ use App\Http\Controllers\CuisineController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TravelTripController;
+use App\Http\Controllers\GalleryController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -37,13 +38,12 @@ Route::get('admin/dashboard', function () {
 //show blog,category,....ra view
 
 
-Route::get('showCategoryBlogContent',[CategoryController::class,'showCategoryBlogContent'])->name('showCategoryBlogContent');
+
 Route::get('home',[BlogController::class,'showBlog'])->name('home');
 Route::get('travelTrip',[TravelTripController::class,'showTravelTrip'])->name('travelTrip');
 Route::get('cuisine',[CuisineController::class,'showCuisine'])->name('cuisine');
+// Route::get('gallery',[GalleryController::class,'showGallery'])->name('gallery');
 
-//show theo id
-Route::get('/blogs/{id}', [BlogController::class, 'show'])->name('blogs.show');
 
 //dang nhap de them xoa sua
 Route::middleware('auth')->group(function () {

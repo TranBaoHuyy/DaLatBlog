@@ -34,10 +34,12 @@
                                 </form>
                                 <a href="{{ route('dashboard', $category->id) }}" class="btn btn-sm btn-info">Dashboard</a>
                             </td>
-                        </tr>
+                        </tr>         
                     @endforeach
-                </tbody>
+                    
+                </tbody> 
             </table>
         </div>
+        <div style="display: flex;justify-content:center;align-items:center;margin-top:15px">{{ $categories->links('pagination::bootstrap-4') }}</div>
     </div>
 @stop

@@ -78,6 +78,7 @@
 * .container-parent .header .nav-Navigation {
   width: 100%;
   overflow: hidden;
+  background-color: #2f2f2f;
 }
 * .container-parent .header .nav-Navigation nav {
   width: 100%;
@@ -94,7 +95,7 @@
 }
 * .container-parent .header .nav-Navigation nav ul li a {
   text-decoration: none;
-  color: #424242;
+  color: white;
   font-size: 15px;
   text-transform: uppercase;
   padding: 10px 0px 10px 0px;
@@ -104,49 +105,6 @@
 }
 * .container-parent .header .nav-Navigation nav ul li a:hover {
   border-bottom: 1px solid #424242;
-}
-* .container-parent .header .nav-Navigation nav ul .dropdown-menu {
-  padding: 23px 50px 23px 22px;
-  list-style: none;
-  position: relative;
-  z-index: 10;
-}
-* .container-parent .header .nav-Navigation nav ul .dropdown-menu a {
-  cursor: pointer;
-}
-* .container-parent .header .nav-Navigation nav ul .dropdown-menu .dropdown-content {
-  width: 260px;
-  height: auto;
-  position: absolute;
-  display: none;
-  opacity: 0;
-  z-index: 10001;
-  background-color: #fff;
-}
-* .container-parent .header .nav-Navigation nav ul .dropdown-menu .dropdown-content li {
-  padding: 10px 20px;
-  list-style: none;
-  z-index: 100;
-}
-* .container-parent .header .nav-Navigation nav ul .dropdown-menu .dropdown-content li a {
-  cursor: pointer;
-  text-decoration: none;
-  color: #424242;
-  font-size: 15px;
-  text-transform: uppercase;
-  display: block;
-  padding: 10px 0;
-  margin: 0;
-  letter-spacing: 1px;
-  font-weight: 500;
-}
-* .container-parent .header .nav-Navigation nav ul .dropdown-menu .dropdown-content li a:hover {
-  border-bottom: 1px solid #424242;
-}
-* .container-parent .header .nav-Navigation nav ul .dropdown-menu:hover > .dropdown-content {
-  display: block;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out; /* Thêm hiệu ứng mờ dần */
 }
 * .container-parent .body-content {
   width: 100%;
@@ -162,6 +120,7 @@
   width: 100%;
   height: auto;
   margin: 0 auto;
+  background-color: #2f2f2f;
 }
 * .container-parent .body-content .content .box-content-wrapper {
   width: 100%;
@@ -201,7 +160,13 @@
   cursor: pointer;
 }
 * .container-parent .body-content .content .box-content-wrapper .content-blog .blog-choice1 a {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
   text-decoration: none;
+  align-items: center;
+  text-align: center;
   color: #424242;
 }
 * .container-parent .body-content .content .box-content-wrapper .content-blog .blog-choice1 a .title-blog {
@@ -242,7 +207,13 @@
   height: 60px;
 }
 * .container-parent .body-content .content .box-content-wrapper .content-blog .blog-choice2 .title-blog a {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
   text-decoration: none;
+  align-items: center;
+  text-align: center;
   color: #424242;
 }
 * .container-parent .body-content .content .box-content-wrapper .content-blog .blog-choice2:hover {
@@ -272,7 +243,13 @@
   height: 60px;
 }
 * .container-parent .body-content .content .box-content-wrapper .content-blog .blog-choice3 .title-blog a {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
   text-decoration: none;
+  align-items: center;
+  text-align: center;
   color: #424242;
 }
 * .container-parent .body-content .content .box-content-wrapper .content-blog .blog-choice3:hover {
@@ -296,7 +273,7 @@
 * .container-parent .body-content .content .blog-box .blog-title p {
   font-weight: normal;
   font-size: 40px;
-  color: #424242;
+  color: white;
 }
 * .container-parent .body-content .content .blog-box .blog-content {
   width: 1200px;
@@ -314,10 +291,13 @@
   display: block;
   background-color: #ffffff;
   overflow: hidden;
+  border-radius: 3px;
 }
 * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper {
   width: 100%;
+  height: auto;
   margin-bottom: 10px;
+  border-bottom: 1px solid #424242;
 }
 * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-thumbnail {
   width: 100%;
@@ -328,7 +308,7 @@
   overflow: hidden;
 }
 * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-thumbnail .blog-date {
-  width: 20%;
+  width: 18%;
   height: 310px;
 }
 * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-thumbnail .blog-date i {
@@ -342,27 +322,24 @@
   color: #424242;
 }
 * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-thumbnail .blog-image {
-  width: 80%;
+  width: 82%;
   height: 350px;
+  padding: 20px;
 }
-* .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-thumbnail .blog-image a {
-  text-decoration: none;
-}
-* .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-thumbnail .blog-image a img {
+* .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-thumbnail .blog-image img {
+  border-radius: 3px;
   width: 100%;
   height: 340px;
 }
 * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-content-inner {
   width: 100%;
-  height: 95vh;
+  height: auto;
   margin-bottom: 40px;
   overflow: hidden;
   display: flex;
-  align-items: center;
 }
 * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-content-inner .blog-content-inner-wrapper {
-  width: 70%;
-  height: 80vh;
+  width: 80%;
   margin-left: 130px;
 }
 * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-content-inner .blog-content-inner-wrapper h1 {
@@ -424,6 +401,7 @@
   height: 100%;
   margin-left: 60px;
   overflow: hidden;
+  border-radius: 3px;
 }
 * .container-parent .body-content .content .blog-box .blog-content .blog-content-right .sidebar {
   width: 100%;
@@ -549,6 +527,8 @@
   align-items: center;
   text-align: center;
   padding: 5px;
+  height: auto;
+  background-color: #ffffff;
 }
 * .container-parent .body-content .content .blog-box .blog-content .blog-content-right .sidebar .category .category-box ul {
   height: auto;
@@ -573,10 +553,10 @@
   width: 100%;
   border-top: 1px solid #909090;
   overflow: hidden;
-  background-color: white;
+  background-color: #424242;
 }
 * .container-parent .footer .footer-box {
-  width: 1200px;
+  width: auto;
   height: 300px;
   margin: 0 auto;
   display: flex;
@@ -605,12 +585,13 @@
 * .container-parent .footer .footer-box .footer-left .footer-about-me-title .footer-about-title p {
   height: 40px;
   color: #383838;
+  color: white;
   display: flex;
   font-weight: 100;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 * .container-parent .footer .footer-box .footer-left .footer-about-me {
   width: 100%;
@@ -618,7 +599,7 @@
   padding: 20px 0px;
 }
 * .container-parent .footer .footer-box .footer-left .footer-about-me p {
-  color: #424242;
+  color: white;
 }
 * .container-parent .footer .footer-box .footer-center {
   width: 30%;
@@ -639,12 +620,12 @@
 }
 * .container-parent .footer .footer-box .footer-center .footer-tag-cloud-title .footer-tag-title p {
   height: 40px;
-  color: #383838;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 * .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
   width: 80%;
@@ -691,9 +672,9 @@
 }
 * .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-title p {
   height: 40px;
-  color: #383838;
+  color: white;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 * .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list {
   width: 100%;
@@ -712,7 +693,7 @@
 }
 * .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li a {
   font-size: 15px;
-  color: #383838;
+  color: white;
   text-decoration: none;
 }
 * .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li a:hover {
@@ -782,7 +763,6 @@ body.style-total-page .container-parent .body-content .content .travel-trip-wrap
 }
 body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box {
   width: 1200px;
-  height: 690vh;
   margin-top: 20px;
   display: flex;
   flex-direction: row;
@@ -790,6 +770,7 @@ body.style-total-page .container-parent .body-content .content .travel-trip-wrap
 }
 body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box .travel-trip-box-left {
   width: 65%;
+  padding: 50px;
   display: block;
   overflow: hidden;
   background-color: white;
@@ -1017,7 +998,6 @@ body.style-tour-page .container-parent .body-content .content {
 body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper {
   width: 1000px;
   overflow: hidden;
-  height: 940vh;
   margin: 0 auto;
   background-image: url("/public/image/anhbia.jpg");
   background-position: top center;
@@ -1026,7 +1006,7 @@ body.style-tour-page .container-parent .body-content .content .travel-tour-wrapp
 }
 body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-header {
   width: 100%;
-  height: 650px;
+  height: 500px;
   margin-top: 60px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1035,14 +1015,12 @@ body.style-tour-page .container-parent .body-content .content .travel-tour-wrapp
 }
 body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box {
   width: 100%;
-  height: 690vh;
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box .travel-tour-box-content {
   width: 90%;
-  height: 820vh;
   padding: 5px 20px 5px 20px;
   display: block;
   background-color: white;
@@ -1131,7 +1109,7 @@ body.style-tour-page .container-parent .footer {
   background-color: white;
 }
 body.style-tour-page .container-parent .footer .footer-box {
-  width: 1150px;
+  width: auto;
   height: 300px;
   margin: 0 auto;
   display: flex;
@@ -1403,20 +1381,22 @@ body.style-cuisine-page .container-parent .footer {
   width: 100%;
   border-top: 1px solid #909090;
   overflow: hidden;
-  background-color: white;
+  background-color: #424242;
 }
 body.style-cuisine-page .container-parent .footer .footer-box {
-  width: 1150px;
+  width: auto;
   height: 300px;
   margin: 0 auto;
   display: flex;
   padding: 40px;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 body.style-cuisine-page .container-parent .footer .footer-box .footer-left {
   width: 30%;
   height: 350px;
+  overflow: hidden;
 }
 body.style-cuisine-page .container-parent .footer .footer-box .footer-left .footer-about-me-title {
   width: 100%;
@@ -1433,12 +1413,13 @@ body.style-cuisine-page .container-parent .footer .footer-box .footer-left .foot
 body.style-cuisine-page .container-parent .footer .footer-box .footer-left .footer-about-me-title .footer-about-title p {
   height: 40px;
   color: #383838;
+  color: white;
   display: flex;
   font-weight: 100;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-cuisine-page .container-parent .footer .footer-box .footer-left .footer-about-me {
   width: 100%;
@@ -1446,12 +1427,13 @@ body.style-cuisine-page .container-parent .footer .footer-box .footer-left .foot
   padding: 20px 0px;
 }
 body.style-cuisine-page .container-parent .footer .footer-box .footer-left .footer-about-me p {
-  color: #424242;
+  color: white;
 }
 body.style-cuisine-page .container-parent .footer .footer-box .footer-center {
   width: 30%;
   height: 350px;
   padding-left: 30px;
+  overflow: hidden;
 }
 body.style-cuisine-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud-title {
   width: 100%;
@@ -1466,12 +1448,12 @@ body.style-cuisine-page .container-parent .footer .footer-box .footer-center .fo
 }
 body.style-cuisine-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud-title .footer-tag-title p {
   height: 40px;
-  color: #383838;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-cuisine-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
   width: 80%;
@@ -1503,6 +1485,7 @@ body.style-cuisine-page .container-parent .footer .footer-box .footer-right {
   width: 30%;
   height: 350px;
   position: relative;
+  overflow: hidden;
 }
 body.style-cuisine-page .container-parent .footer .footer-box .footer-right .footer-recent-post {
   width: 100%;
@@ -1517,9 +1500,9 @@ body.style-cuisine-page .container-parent .footer .footer-box .footer-right .foo
 }
 body.style-cuisine-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-title p {
   height: 40px;
-  color: #383838;
+  color: white;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-cuisine-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list {
   width: 100%;
@@ -1538,11 +1521,37 @@ body.style-cuisine-page .container-parent .footer .footer-box .footer-right .foo
 }
 body.style-cuisine-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li a {
   font-size: 15px;
-  color: #383838;
+  color: white;
   text-decoration: none;
 }
 body.style-cuisine-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li a:hover {
   color: #909090;
+}
+body.style-cuisine-page .container-parent .footer .footer-box .back-to-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  border-radius: 5px;
+  text-align: center;
+  display: none; /* Ban đầu ẩn nút đi */
+  z-index: 1000;
+}
+body.style-cuisine-page .container-parent .footer .footer-box .back-to-top a {
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px 15px;
+}
+body.style-cuisine-page .container-parent .footer .footer-box .back-to-top:hover {
+  background-color: #555;
 }
 
 body.style-gallery-page {
@@ -1576,7 +1585,7 @@ body.style-gallery-page .container-parent .body-content .content .gallery-wrappe
 body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-header {
   width: 100%;
   height: 650px;
-  margin-top: 60px;
+  margin-top: 160px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1637,7 +1646,14 @@ body.style-gallery-page .container-parent .body-content .content .gallery-wrappe
   text-decoration: underline;
 }
 body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box .gallery-box-content .gallery-content .image-gallery {
-  width: 100%;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  position: relative;
+}
+body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box .gallery-box-content .gallery-content .image-gallery.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box .gallery-box-content .gallery-content .image-gallery img {
   width: 100%;
@@ -1713,20 +1729,22 @@ body.style-gallery-page .container-parent .footer {
   width: 100%;
   border-top: 1px solid #909090;
   overflow: hidden;
-  background-color: white;
+  background-color: #424242;
 }
 body.style-gallery-page .container-parent .footer .footer-box {
-  width: 1150px;
+  width: auto;
   height: 300px;
   margin: 0 auto;
   display: flex;
   padding: 40px;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 body.style-gallery-page .container-parent .footer .footer-box .footer-left {
   width: 30%;
   height: 350px;
+  overflow: hidden;
 }
 body.style-gallery-page .container-parent .footer .footer-box .footer-left .footer-about-me-title {
   width: 100%;
@@ -1743,12 +1761,13 @@ body.style-gallery-page .container-parent .footer .footer-box .footer-left .foot
 body.style-gallery-page .container-parent .footer .footer-box .footer-left .footer-about-me-title .footer-about-title p {
   height: 40px;
   color: #383838;
+  color: white;
   display: flex;
   font-weight: 100;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-gallery-page .container-parent .footer .footer-box .footer-left .footer-about-me {
   width: 100%;
@@ -1756,12 +1775,13 @@ body.style-gallery-page .container-parent .footer .footer-box .footer-left .foot
   padding: 20px 0px;
 }
 body.style-gallery-page .container-parent .footer .footer-box .footer-left .footer-about-me p {
-  color: #424242;
+  color: white;
 }
 body.style-gallery-page .container-parent .footer .footer-box .footer-center {
   width: 30%;
   height: 350px;
   padding-left: 30px;
+  overflow: hidden;
 }
 body.style-gallery-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud-title {
   width: 100%;
@@ -1776,12 +1796,12 @@ body.style-gallery-page .container-parent .footer .footer-box .footer-center .fo
 }
 body.style-gallery-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud-title .footer-tag-title p {
   height: 40px;
-  color: #383838;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-gallery-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
   width: 80%;
@@ -1813,6 +1833,7 @@ body.style-gallery-page .container-parent .footer .footer-box .footer-right {
   width: 30%;
   height: 350px;
   position: relative;
+  overflow: hidden;
 }
 body.style-gallery-page .container-parent .footer .footer-box .footer-right .footer-recent-post {
   width: 100%;
@@ -1827,9 +1848,9 @@ body.style-gallery-page .container-parent .footer .footer-box .footer-right .foo
 }
 body.style-gallery-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-title p {
   height: 40px;
-  color: #383838;
+  color: white;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-gallery-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list {
   width: 100%;
@@ -1848,11 +1869,37 @@ body.style-gallery-page .container-parent .footer .footer-box .footer-right .foo
 }
 body.style-gallery-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li a {
   font-size: 15px;
-  color: #383838;
+  color: white;
   text-decoration: none;
 }
 body.style-gallery-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li a:hover {
   color: #909090;
+}
+body.style-gallery-page .container-parent .footer .footer-box .back-to-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  border-radius: 5px;
+  text-align: center;
+  display: none; /* Ban đầu ẩn nút đi */
+  z-index: 1000;
+}
+body.style-gallery-page .container-parent .footer .footer-box .back-to-top a {
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px 15px;
+}
+body.style-gallery-page .container-parent .footer .footer-box .back-to-top:hover {
+  background-color: #555;
 }
 
 body.style-thacDatanla-page {
@@ -1898,6 +1945,7 @@ body.style-thacDatanla-page .container-parent .body-content .content .thacDatanl
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  background-color: #2f2f2f;
 }
 body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content {
   width: 100%;
@@ -1990,20 +2038,22 @@ body.style-thacDatanla-page .container-parent .footer {
   width: 100%;
   border-top: 1px solid #909090;
   overflow: hidden;
-  background-color: white;
+  background-color: #424242;
 }
 body.style-thacDatanla-page .container-parent .footer .footer-box {
-  width: 1150px;
+  width: auto;
   height: 300px;
   margin: 0 auto;
   display: flex;
   padding: 40px;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 body.style-thacDatanla-page .container-parent .footer .footer-box .footer-left {
   width: 30%;
   height: 350px;
+  overflow: hidden;
 }
 body.style-thacDatanla-page .container-parent .footer .footer-box .footer-left .footer-about-me-title {
   width: 100%;
@@ -2020,12 +2070,13 @@ body.style-thacDatanla-page .container-parent .footer .footer-box .footer-left .
 body.style-thacDatanla-page .container-parent .footer .footer-box .footer-left .footer-about-me-title .footer-about-title p {
   height: 40px;
   color: #383838;
+  color: white;
   display: flex;
   font-weight: 100;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-thacDatanla-page .container-parent .footer .footer-box .footer-left .footer-about-me {
   width: 100%;
@@ -2033,12 +2084,13 @@ body.style-thacDatanla-page .container-parent .footer .footer-box .footer-left .
   padding: 20px 0px;
 }
 body.style-thacDatanla-page .container-parent .footer .footer-box .footer-left .footer-about-me p {
-  color: #424242;
+  color: white;
 }
 body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center {
   width: 30%;
   height: 350px;
   padding-left: 30px;
+  overflow: hidden;
 }
 body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud-title {
   width: 100%;
@@ -2053,12 +2105,12 @@ body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center
 }
 body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud-title .footer-tag-title p {
   height: 40px;
-  color: #383838;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
   width: 80%;
@@ -2090,6 +2142,7 @@ body.style-thacDatanla-page .container-parent .footer .footer-box .footer-right 
   width: 30%;
   height: 350px;
   position: relative;
+  overflow: hidden;
 }
 body.style-thacDatanla-page .container-parent .footer .footer-box .footer-right .footer-recent-post {
   width: 100%;
@@ -2104,9 +2157,9 @@ body.style-thacDatanla-page .container-parent .footer .footer-box .footer-right 
 }
 body.style-thacDatanla-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-title p {
   height: 40px;
-  color: #383838;
+  color: white;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-thacDatanla-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list {
   width: 100%;
@@ -2125,11 +2178,37 @@ body.style-thacDatanla-page .container-parent .footer .footer-box .footer-right 
 }
 body.style-thacDatanla-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li a {
   font-size: 15px;
-  color: #383838;
+  color: white;
   text-decoration: none;
 }
 body.style-thacDatanla-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li a:hover {
   color: #909090;
+}
+body.style-thacDatanla-page .container-parent .footer .footer-box .back-to-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  border-radius: 5px;
+  text-align: center;
+  display: none; /* Ban đầu ẩn nút đi */
+  z-index: 1000;
+}
+body.style-thacDatanla-page .container-parent .footer .footer-box .back-to-top a {
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px 15px;
+}
+body.style-thacDatanla-page .container-parent .footer .footer-box .back-to-top:hover {
+  background-color: #555;
 }
 
 body.style-quangTruongLamVien-page {
@@ -2175,6 +2254,7 @@ body.style-quangTruongLamVien-page .container-parent .body-content .content .qua
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  background-color: #2f2f2f;
 }
 body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box .quangTruongLamVien-box-content {
   width: 100%;
@@ -2267,20 +2347,22 @@ body.style-quangTruongLamVien-page .container-parent .footer {
   width: 100%;
   border-top: 1px solid #909090;
   overflow: hidden;
-  background-color: white;
+  background-color: #424242;
 }
 body.style-quangTruongLamVien-page .container-parent .footer .footer-box {
-  width: 1150px;
+  width: auto;
   height: 300px;
   margin: 0 auto;
   display: flex;
   padding: 40px;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-left {
   width: 30%;
   height: 350px;
+  overflow: hidden;
 }
 body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-left .footer-about-me-title {
   width: 100%;
@@ -2297,12 +2379,13 @@ body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer
 body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-left .footer-about-me-title .footer-about-title p {
   height: 40px;
   color: #383838;
+  color: white;
   display: flex;
   font-weight: 100;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-left .footer-about-me {
   width: 100%;
@@ -2310,12 +2393,13 @@ body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer
   padding: 20px 0px;
 }
 body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-left .footer-about-me p {
-  color: #424242;
+  color: white;
 }
 body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-center {
   width: 30%;
   height: 350px;
   padding-left: 30px;
+  overflow: hidden;
 }
 body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud-title {
   width: 100%;
@@ -2330,12 +2414,12 @@ body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer
 }
 body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud-title .footer-tag-title p {
   height: 40px;
-  color: #383838;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
   width: 80%;
@@ -2367,6 +2451,7 @@ body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer
   width: 30%;
   height: 350px;
   position: relative;
+  overflow: hidden;
 }
 body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-right .footer-recent-post {
   width: 100%;
@@ -2381,9 +2466,9 @@ body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer
 }
 body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-title p {
   height: 40px;
-  color: #383838;
+  color: white;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list {
   width: 100%;
@@ -2402,11 +2487,37 @@ body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer
 }
 body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li a {
   font-size: 15px;
-  color: #383838;
+  color: white;
   text-decoration: none;
 }
 body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li a:hover {
   color: #909090;
+}
+body.style-quangTruongLamVien-page .container-parent .footer .footer-box .back-to-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  border-radius: 5px;
+  text-align: center;
+  display: none; /* Ban đầu ẩn nút đi */
+  z-index: 1000;
+}
+body.style-quangTruongLamVien-page .container-parent .footer .footer-box .back-to-top a {
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px 15px;
+}
+body.style-quangTruongLamVien-page .container-parent .footer .footer-box .back-to-top:hover {
+  background-color: #555;
 }
 
 body.style-hoTuyenLam-page {
@@ -2452,6 +2563,7 @@ body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  background-color: #2f2f2f;
 }
 body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box .hoTuyenLam-box-content {
   width: 100%;
@@ -2544,20 +2656,22 @@ body.style-hoTuyenLam-page .container-parent .footer {
   width: 100%;
   border-top: 1px solid #909090;
   overflow: hidden;
-  background-color: white;
+  background-color: #424242;
 }
 body.style-hoTuyenLam-page .container-parent .footer .footer-box {
-  width: 1150px;
+  width: auto;
   height: 300px;
   margin: 0 auto;
   display: flex;
   padding: 40px;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-left {
   width: 30%;
   height: 350px;
+  overflow: hidden;
 }
 body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-left .footer-about-me-title {
   width: 100%;
@@ -2574,12 +2688,13 @@ body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-left .f
 body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-left .footer-about-me-title .footer-about-title p {
   height: 40px;
   color: #383838;
+  color: white;
   display: flex;
   font-weight: 100;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-left .footer-about-me {
   width: 100%;
@@ -2587,12 +2702,13 @@ body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-left .f
   padding: 20px 0px;
 }
 body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-left .footer-about-me p {
-  color: #424242;
+  color: white;
 }
 body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-center {
   width: 30%;
   height: 350px;
   padding-left: 30px;
+  overflow: hidden;
 }
 body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud-title {
   width: 100%;
@@ -2607,12 +2723,12 @@ body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-center 
 }
 body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud-title .footer-tag-title p {
   height: 40px;
-  color: #383838;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
   width: 80%;
@@ -2644,6 +2760,7 @@ body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-right {
   width: 30%;
   height: 350px;
   position: relative;
+  overflow: hidden;
 }
 body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-right .footer-recent-post {
   width: 100%;
@@ -2658,9 +2775,9 @@ body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-right .
 }
 body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-title p {
   height: 40px;
-  color: #383838;
+  color: white;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list {
   width: 100%;
@@ -2679,11 +2796,37 @@ body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-right .
 }
 body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li a {
   font-size: 15px;
-  color: #383838;
+  color: white;
   text-decoration: none;
 }
 body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li a:hover {
   color: #909090;
+}
+body.style-hoTuyenLam-page .container-parent .footer .footer-box .back-to-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  border-radius: 5px;
+  text-align: center;
+  display: none; /* Ban đầu ẩn nút đi */
+  z-index: 1000;
+}
+body.style-hoTuyenLam-page .container-parent .footer .footer-box .back-to-top a {
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px 15px;
+}
+body.style-hoTuyenLam-page .container-parent .footer .footer-box .back-to-top:hover {
+  background-color: #555;
 }
 
 body.style-dinhLangBiang-page {
@@ -2729,6 +2872,7 @@ body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLang
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  background-color: #2f2f2f;
 }
 body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box .dinhLangBiang-box-content {
   width: 100%;
@@ -2803,20 +2947,22 @@ body.style-dinhLangBiang-page .container-parent .footer {
   width: 100%;
   border-top: 1px solid #909090;
   overflow: hidden;
-  background-color: white;
+  background-color: #424242;
 }
 body.style-dinhLangBiang-page .container-parent .footer .footer-box {
-  width: 1150px;
+  width: auto;
   height: 300px;
   margin: 0 auto;
   display: flex;
   padding: 40px;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-left {
   width: 30%;
   height: 350px;
+  overflow: hidden;
 }
 body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-left .footer-about-me-title {
   width: 100%;
@@ -2833,12 +2979,13 @@ body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-left
 body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-left .footer-about-me-title .footer-about-title p {
   height: 40px;
   color: #383838;
+  color: white;
   display: flex;
   font-weight: 100;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-left .footer-about-me {
   width: 100%;
@@ -2846,12 +2993,13 @@ body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-left
   padding: 20px 0px;
 }
 body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-left .footer-about-me p {
-  color: #424242;
+  color: white;
 }
 body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-center {
   width: 30%;
   height: 350px;
   padding-left: 30px;
+  overflow: hidden;
 }
 body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud-title {
   width: 100%;
@@ -2866,12 +3014,12 @@ body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-cent
 }
 body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud-title .footer-tag-title p {
   height: 40px;
-  color: #383838;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
   width: 80%;
@@ -2903,6 +3051,7 @@ body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-righ
   width: 30%;
   height: 350px;
   position: relative;
+  overflow: hidden;
 }
 body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-right .footer-recent-post {
   width: 100%;
@@ -2917,9 +3066,9 @@ body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-righ
 }
 body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-title p {
   height: 40px;
-  color: #383838;
+  color: white;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list {
   width: 100%;
@@ -2938,11 +3087,37 @@ body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-righ
 }
 body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li a {
   font-size: 15px;
-  color: #383838;
+  color: white;
   text-decoration: none;
 }
 body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li a:hover {
   color: #909090;
+}
+body.style-dinhLangBiang-page .container-parent .footer .footer-box .back-to-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  border-radius: 5px;
+  text-align: center;
+  display: none; /* Ban đầu ẩn nút đi */
+  z-index: 1000;
+}
+body.style-dinhLangBiang-page .container-parent .footer .footer-box .back-to-top a {
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px 15px;
+}
+body.style-dinhLangBiang-page .container-parent .footer .footer-box .back-to-top:hover {
+  background-color: #555;
 }
 
 body.style-phongCachSong-page {
@@ -2988,6 +3163,7 @@ body.style-phongCachSong-page .container-parent .body-content .content .phongCac
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  background-color: #2f2f2f;
 }
 body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content {
   width: 100%;
@@ -3062,20 +3238,22 @@ body.style-phongCachSong-page .container-parent .footer {
   width: 100%;
   border-top: 1px solid #909090;
   overflow: hidden;
-  background-color: white;
+  background-color: #424242;
 }
 body.style-phongCachSong-page .container-parent .footer .footer-box {
-  width: 1150px;
+  width: auto;
   height: 300px;
   margin: 0 auto;
   display: flex;
   padding: 40px;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 body.style-phongCachSong-page .container-parent .footer .footer-box .footer-left {
   width: 30%;
   height: 350px;
+  overflow: hidden;
 }
 body.style-phongCachSong-page .container-parent .footer .footer-box .footer-left .footer-about-me-title {
   width: 100%;
@@ -3092,12 +3270,13 @@ body.style-phongCachSong-page .container-parent .footer .footer-box .footer-left
 body.style-phongCachSong-page .container-parent .footer .footer-box .footer-left .footer-about-me-title .footer-about-title p {
   height: 40px;
   color: #383838;
+  color: white;
   display: flex;
   font-weight: 100;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-phongCachSong-page .container-parent .footer .footer-box .footer-left .footer-about-me {
   width: 100%;
@@ -3105,12 +3284,13 @@ body.style-phongCachSong-page .container-parent .footer .footer-box .footer-left
   padding: 20px 0px;
 }
 body.style-phongCachSong-page .container-parent .footer .footer-box .footer-left .footer-about-me p {
-  color: #424242;
+  color: white;
 }
 body.style-phongCachSong-page .container-parent .footer .footer-box .footer-center {
   width: 30%;
   height: 350px;
   padding-left: 30px;
+  overflow: hidden;
 }
 body.style-phongCachSong-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud-title {
   width: 100%;
@@ -3125,12 +3305,12 @@ body.style-phongCachSong-page .container-parent .footer .footer-box .footer-cent
 }
 body.style-phongCachSong-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud-title .footer-tag-title p {
   height: 40px;
-  color: #383838;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-phongCachSong-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
   width: 80%;
@@ -3162,6 +3342,7 @@ body.style-phongCachSong-page .container-parent .footer .footer-box .footer-righ
   width: 30%;
   height: 350px;
   position: relative;
+  overflow: hidden;
 }
 body.style-phongCachSong-page .container-parent .footer .footer-box .footer-right .footer-recent-post {
   width: 100%;
@@ -3176,9 +3357,9 @@ body.style-phongCachSong-page .container-parent .footer .footer-box .footer-righ
 }
 body.style-phongCachSong-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-title p {
   height: 40px;
-  color: #383838;
+  color: white;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 body.style-phongCachSong-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list {
   width: 100%;
@@ -3197,9 +3378,984 @@ body.style-phongCachSong-page .container-parent .footer .footer-box .footer-righ
 }
 body.style-phongCachSong-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li a {
   font-size: 15px;
-  color: #383838;
+  color: white;
   text-decoration: none;
 }
 body.style-phongCachSong-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li a:hover {
   color: #909090;
+}
+body.style-phongCachSong-page .container-parent .footer .footer-box .back-to-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  border-radius: 5px;
+  text-align: center;
+  display: none; /* Ban đầu ẩn nút đi */
+  z-index: 1000;
+}
+body.style-phongCachSong-page .container-parent .footer .footer-box .back-to-top a {
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px 15px;
+}
+body.style-phongCachSong-page .container-parent .footer .footer-box .back-to-top:hover {
+  background-color: #555;
+}
+
+@media only screen and (min-width: 1174px) and (max-width: 1440px) {
+  .header, .footer {
+    font-size: 18px;
+  }
+  * .container-parent .header .nav-Navigation nav ul {
+    flex-wrap: nowrap;
+  }
+  .container-parent {
+    width: 100%;
+  }
+  .nav-navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .blog-wrapper {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 88vh;
+  }
+  .footer-box {
+    width: auto;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  * .container-parent .header .wrapper .wrapper-top .auth-container {
+    padding-left: 0px;
+    padding-top: 15px;
+  }
+  * .container-parent .body-content .content .box-content-wrapper .box-content-header {
+    height: 456px;
+    background-size: cover;
+  }
+  body.style-total-page .container-parent .body-content .content {
+    width: 100%;
+  }
+  body.style-total-page .container-parent .body-content .content .travel-trip-wrapper {
+    width: 80%;
+  }
+  body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-header {
+    height: 456px;
+    background-size: cover;
+  }
+  body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box {
+    width: auto;
+  }
+  body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box .travel-trip-box-left {
+    width: 100%;
+  }
+  body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box .travel-trip-box-right {
+    display: none;
+  }
+  .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper {
+    width: 80%;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-header {
+    background-size: cover;
+    height: 456px;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-box {
+    margin-top: 0px;
+  }
+  body.style-gallery-page .container-parent .body-content .content .gallery-wrapper {
+    width: 80%;
+  }
+  body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-header {
+    background-size: cover;
+    height: 456px;
+  }
+  body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box {
+    margin-top: 0px;
+  }
+  body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box .gallery-box-content {
+    width: 100%;
+  }
+  body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper {
+    width: 80%;
+  }
+  body.style-travelTour-page .container-parent .body-content .content .travelTour-wrapper .travelTour-header {
+    background-size: cover;
+    height: 456px;
+  }
+  body.style-travelTour-page .container-parent .body-content .content .travelTour-wrapper .travelTour-box {
+    margin-top: 0px;
+  }
+  body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box .travel-tour-box-content {
+    width: 100%;
+  }
+  body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box .quangTruongLamVien-box-content {
+    padding: 5px 40px 5px 20px;
+    width: 80%;
+  }
+  body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box .quangTruongLamVien-box-content .quangTruongLamVien-content {
+    width: 100%;
+  }
+  body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper {
+    width: 100%;
+  }
+  body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box .hoTuyenLam-box-content {
+    padding: 5px 40px 5px 20px;
+    width: 80%;
+  }
+  body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box .hoTuyenLam-box-content .hoTuyenLam-content {
+    width: 100%;
+  }
+  body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper {
+    width: 100%;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content {
+    padding: 5px 40px 5px 20px;
+    width: 80%;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content {
+    width: 100%;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper {
+    width: 100%;
+  }
+  body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box .dinhLangBiang-box-content {
+    padding: 5px 40px 5px 20px;
+    width: 80%;
+  }
+  body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box .dinhLangBiang-box-content .dinhLangBiang-content {
+    width: 100%;
+  }
+  body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper {
+    width: 100%;
+  }
+  body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content {
+    padding: 5px 40px 5px 20px;
+    width: 80%;
+  }
+  body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content .phongCachSong-content {
+    width: 100%;
+  }
+  body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1173px) {
+  .header, .footer {
+    font-size: 18px;
+  }
+  * .container-parent .header .nav-Navigation nav ul {
+    flex-wrap: nowrap;
+  }
+  .container-parent {
+    width: 100%;
+  }
+  * .container-parent .body-content .content .box-content-wrapper .content-blog {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  * .container-parent .body-content .content .blog-box .blog-content {
+    width: auto;
+  }
+  * .container-parent .body-content .content .blog-box .blog-content .blog-content-left {
+    width: 90%;
+  }
+  * .container-parent .body-content .content .blog-box .blog-content .blog-content-right {
+    display: none;
+  }
+  .nav-navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .blog-wrapper {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 88vh;
+  }
+  .footer-box {
+    width: auto;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  * .container-parent .header .wrapper .wrapper-top .auth-container {
+    padding-left: 0px;
+    padding-top: 15px;
+  }
+  * .container-parent .body-content .content .box-content-wrapper .box-content-header {
+    height: 456px;
+  }
+  body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-header {
+    height: 456px;
+    background-size: contain;
+  }
+  body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box {
+    width: auto;
+  }
+  body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box .travel-trip-box-left {
+    width: 100%;
+  }
+  body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box .travel-trip-box-right {
+    display: none;
+  }
+  .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper {
+    width: 650px;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-box .cuisine-box-content {
+    padding: 30px;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-box .cuisine-box-content .cuisine-content {
+    padding: 0px;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper {
+    width: 100%;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-header {
+    background-size: contain;
+    height: 456px;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-box {
+    margin-top: 0px;
+  }
+  body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box {
+    justify-content: normal;
+  }
+  body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box .gallery-box-content {
+    width: 76%;
+  }
+  body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box .gallery-box-content .gallery-content {
+    padding: 0px;
+  }
+  body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box .travel-tour-box-content {
+    padding: 0px;
+  }
+  body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper {
+    width: 100%;
+  }
+  body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box {
+    justify-content: center;
+  }
+  body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box .travel-tour-box-content .travel-tour-content {
+    padding: 0px;
+  }
+}
+@media only screen and (min-width: 391px) and (max-width: 767px) {
+  * .container-parent .header .wrapper .wrapper-top .logo-blog .blog-title img {
+    width: 220px;
+  }
+  * .container-parent .header .wrapper .wrapper-top .auth-container {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-thumbnail .blog-image a img {
+    width: 95%;
+  }
+  * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-content-inner .blog-content-inner-wrapper {
+    padding-right: 15px;
+  }
+  * .container-parent .header .nav-Navigation nav ul {
+    justify-content: normal;
+  }
+  * .container-parent .body-content .content .box-content-wrapper .box-content-header {
+    height: 285px;
+  }
+  * .container-parent .body-content .content .box-content-wrapper .content-blog {
+    margin-top: 0px;
+    flex-direction: column;
+  }
+  * .container-parent .body-content .content .blog-box {
+    margin-top: 0px;
+  }
+  * .container-parent .body-content .content .blog-box .blog-content .blog-content-right {
+    display: none;
+  }
+  * .container-parent .body-content .content .blog-box .blog-content {
+    width: 100%;
+  }
+  * .container-parent .body-content .content .blog-box .blog-content .blog-content-left {
+    width: 100%;
+  }
+  * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-content-inner .blog-content-inner-wrapper {
+    width: 100%;
+    margin-left: 88px;
+  }
+  .footer {
+    font-size: 18px;
+  }
+  .footer-box {
+    width: auto;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  * .container-parent .footer .footer-box {
+    padding: 20px;
+  }
+  *.container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+  }
+  * .container-parent .footer .footer-box .footer-center {
+    padding-left: 0px;
+  }
+  body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-header {
+    height: 222px;
+    background-size: contain;
+  }
+  body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box {
+    width: auto;
+  }
+  body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box .travel-trip-box-left {
+    width: 100%;
+  }
+  body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box .travel-trip-box-right {
+    display: none;
+  }
+  .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper {
+    width: 650px;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-box .cuisine-box-content {
+    padding: 30px;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-box .cuisine-box-content .cuisine-content {
+    padding: 0px;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper {
+    width: 100%;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-header {
+    height: 222px;
+    background-size: contain;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-box {
+    margin-top: 0px;
+  }
+  body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box .gallery-box-content .gallery-back-home ul .back-home {
+    width: 32%;
+  }
+  body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box {
+    justify-content: normal;
+  }
+  body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box .gallery-box-content {
+    width: 39%;
+  }
+  body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box .gallery-box-content .gallery-content {
+    padding: 0px;
+  }
+  body.style-gallery-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+  body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box .travel-tour-box-content {
+    padding: 20px;
+    width: 430px;
+  }
+  body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper {
+    width: 100%;
+  }
+  body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box {
+    justify-content: center;
+  }
+  body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box .travel-tour-box-content .travel-tour-content {
+    padding: 0px;
+  }
+  body.style-cuisine-page .container-parent .footer .footer-box {
+    padding: 20px;
+  }
+  body.style-gallery-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+  }
+  body.style-cuisine-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding-left: 0px;
+  }
+  body.style-cuisine-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+  body.style-tour-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+  }
+  body.style-tour-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding: 0px;
+  }
+  body.style-tour-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+  body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-header {
+    width: 430px;
+    height: 292px;
+    margin-top: 20px;
+    background-size: contain;
+  }
+  body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box {
+    margin-top: 0;
+    display: block;
+  }
+  body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box .quangTruongLamVien-box-content .quangTruongLamVien-content h2 {
+    width: 388px;
+    font-size: 20px;
+  }
+  body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box .quangTruongLamVien-box-content {
+    width: 36%;
+  }
+  body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box .quangTruongLamVien-box-content .quangTruongLamVien-content {
+    width: auto;
+  }
+  body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+  }
+  body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding: 0px;
+  }
+  body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+  body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-header {
+    width: 430px;
+    height: 292px;
+    margin-top: 20px;
+    background-size: contain;
+  }
+  body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box {
+    margin-top: 0;
+    display: block;
+  }
+  body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box .hoTuyenLam-box-content .hoTuyenLam-content h2 {
+    width: 388px;
+    font-size: 20px;
+  }
+  body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box .hoTuyenLam-box-content {
+    width: 36%;
+  }
+  body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box .hoTuyenLam-box-content .hoTuyenLam-content {
+    width: auto;
+  }
+  body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+  }
+  body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding: 0px;
+  }
+  body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-header {
+    width: 430px;
+    height: 292px;
+    margin-top: 20px;
+    background-size: contain;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box {
+    margin-top: 0;
+    display: block;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content h2 {
+    width: 388px;
+    font-size: 20px;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content {
+    width: 36%;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content {
+    width: auto;
+  }
+  body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+  }
+  body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding: 0px;
+  }
+  body.style-thacDatanla-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+  body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-header {
+    width: 430px;
+    height: 292px;
+    margin-top: 20px;
+    background-size: contain;
+  }
+  body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box {
+    margin-top: 0;
+    display: block;
+  }
+  body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box .dinhLangBiang-box-content .dinhLangBiang-content h2 {
+    width: 388px;
+    font-size: 20px;
+  }
+  body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box .dinhLangBiang-box-content {
+    width: 36%;
+  }
+  body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box .dinhLangBiang-box-content .dinhLangBiang-content {
+    width: auto;
+  }
+  body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+  }
+  body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding: 0px;
+  }
+  body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-header {
+    width: 430px;
+    height: 292px;
+    margin-top: 20px;
+    background-size: contain;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box {
+    margin-top: 0;
+    display: block;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content h2 {
+    width: 388px;
+    font-size: 20px;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content {
+    width: 36%;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content {
+    width: auto;
+  }
+  body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+  }
+  body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding: 0px;
+  }
+  body.style-thacDatanla-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+  body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-header {
+    width: 430px;
+    height: 292px;
+    margin-top: 20px;
+    background-size: contain;
+  }
+  body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box {
+    margin-top: 0;
+    display: block;
+  }
+  body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content .phongCachSong-content h2 {
+    width: 388px;
+    font-size: 20px;
+  }
+  body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content {
+    width: 36%;
+  }
+  body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content .phongCachSong-content {
+    width: auto;
+  }
+  body.style-phongCachSong-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+  }
+  body.style-phongCachSong-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding: 0px;
+  }
+  body.style-phongCachSong-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+}
+@media (max-width: 390px) {
+  * .container-parent .header .wrapper .wrapper-top .logo-blog .blog-title img {
+    width: 220px;
+  }
+  * .container-parent .header .wrapper .wrapper-top .auth-container {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-thumbnail .blog-date {
+    width: 24%;
+  }
+  * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-thumbnail .blog-image {
+    width: 76%;
+  }
+  * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-thumbnail .blog-image a img {
+    width: 95%;
+  }
+  * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-content-inner .blog-content-inner-wrapper {
+    padding-right: 15px;
+  }
+  * .container-parent .header .nav-Navigation nav ul {
+    justify-content: normal;
+  }
+  * .container-parent .body-content .content .box-content-wrapper .box-content-header {
+    height: 285px;
+  }
+  * .container-parent .body-content .content .box-content-wrapper .content-blog {
+    margin-top: 0px;
+    flex-direction: column;
+  }
+  * .container-parent .body-content .content .blog-box {
+    margin-top: 0px;
+  }
+  * .container-parent .body-content .content .blog-box .blog-content .blog-content-right {
+    display: none;
+  }
+  * .container-parent .body-content .content .blog-box .blog-content {
+    width: 100%;
+  }
+  * .container-parent .body-content .content .blog-box .blog-content .blog-content-left {
+    width: 100%;
+  }
+  * .container-parent .body-content .content .blog-box .blog-content .blog-content-left .blog-wrapper .blog-content-inner .blog-content-inner-wrapper {
+    width: 100%;
+    margin-left: 88px;
+  }
+  .footer {
+    font-size: 18px;
+  }
+  .footer-box {
+    width: auto;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  * .container-parent .footer .footer-box {
+    padding: 20px;
+  }
+  *.container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+  }
+  * .container-parent .footer .footer-box .footer-center {
+    padding-left: 0px;
+  }
+  body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-header {
+    height: 222px;
+    background-size: contain;
+  }
+  body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box {
+    width: auto;
+  }
+  body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box .travel-trip-box-left {
+    width: 100%;
+  }
+  body.style-total-page .container-parent .body-content .content .travel-trip-wrapper .travel-trip-box .travel-trip-box-right {
+    display: none;
+  }
+  .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper {
+    width: 650px;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-box .cuisine-box-content {
+    padding: 30px;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-box .cuisine-box-content .cuisine-content {
+    padding: 0px;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper {
+    width: 100%;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-header {
+    height: 222px;
+    background-size: contain;
+  }
+  body.style-cuisine-page .container-parent .body-content .content .cuisine-wrapper .cuisine-box {
+    margin-top: 0px;
+  }
+  body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box .gallery-box-content .gallery-back-home ul .back-home {
+    width: 32%;
+  }
+  body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box {
+    justify-content: normal;
+  }
+  body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box .gallery-box-content {
+    width: 39%;
+  }
+  body.style-gallery-page .container-parent .body-content .content .gallery-wrapper .gallery-box .gallery-box-content .gallery-content {
+    padding: 0px;
+  }
+  body.style-gallery-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+  body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box .travel-tour-box-content {
+    padding: 20px;
+    width: 430px;
+  }
+  body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper {
+    width: 100%;
+  }
+  body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box {
+    justify-content: center;
+  }
+  body.style-tour-page .container-parent .body-content .content .travel-tour-wrapper .travel-tour-box .travel-tour-box-content .travel-tour-content {
+    padding: 0px;
+  }
+  body.style-cuisine-page .container-parent .footer .footer-box {
+    padding: 20px;
+  }
+  body.style-gallery-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+  }
+  body.style-cuisine-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding-left: 0px;
+  }
+  body.style-cuisine-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+  body.style-tour-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+  }
+  body.style-tour-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding: 0px;
+  }
+  body.style-tour-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+  body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-header {
+    width: 430px;
+    height: 292px;
+    margin-top: 20px;
+    background-size: contain;
+  }
+  body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box {
+    margin-top: 0;
+    display: block;
+  }
+  body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box .quangTruongLamVien-box-content .quangTruongLamVien-content h2 {
+    width: 388px;
+    font-size: 20px;
+  }
+  body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box .quangTruongLamVien-box-content {
+    width: 36%;
+  }
+  body.style-quangTruongLamVien-page .container-parent .body-content .content .quangTruongLamVien-wrapper .quangTruongLamVien-box .quangTruongLamVien-box-content .quangTruongLamVien-content {
+    width: auto;
+  }
+  body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+  }
+  body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding: 0px;
+  }
+  body.style-quangTruongLamVien-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+  body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-header {
+    width: 430px;
+    height: 292px;
+    margin-top: 20px;
+    background-size: contain;
+  }
+  body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box {
+    margin-top: 0;
+    display: block;
+  }
+  body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box .hoTuyenLam-box-content .hoTuyenLam-content h2 {
+    width: 388px;
+    font-size: 20px;
+  }
+  body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box .hoTuyenLam-box-content {
+    width: 36%;
+  }
+  body.style-hoTuyenLam-page .container-parent .body-content .content .hoTuyenLam-wrapper .hoTuyenLam-box .hoTuyenLam-box-content .hoTuyenLam-content {
+    width: auto;
+  }
+  body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+  }
+  body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding: 0px;
+  }
+  body.style-hoTuyenLam-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-header {
+    width: 430px;
+    height: 292px;
+    margin-top: 20px;
+    background-size: contain;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box {
+    margin-top: 0;
+    display: block;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content h2 {
+    width: 388px;
+    font-size: 20px;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content {
+    width: 36%;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content {
+    width: auto;
+  }
+  body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+  }
+  body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding: 0px;
+  }
+  body.style-thacDatanla-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+  body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-header {
+    width: 430px;
+    height: 292px;
+    margin-top: 20px;
+    background-size: contain;
+  }
+  body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box {
+    margin-top: 0;
+    display: block;
+  }
+  body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box .dinhLangBiang-box-content .dinhLangBiang-content h2 {
+    width: 388px;
+    font-size: 20px;
+  }
+  body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box .dinhLangBiang-box-content {
+    width: 36%;
+  }
+  body.style-dinhLangBiang-page .container-parent .body-content .content .dinhLangBiang-wrapper .dinhLangBiang-box .dinhLangBiang-box-content .dinhLangBiang-content {
+    width: auto;
+  }
+  body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+  }
+  body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding: 0px;
+  }
+  body.style-dinhLangBiang-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-header {
+    width: 430px;
+    height: 292px;
+    margin-top: 20px;
+    background-size: contain;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box {
+    margin-top: 0;
+    display: block;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content h2 {
+    width: 388px;
+    font-size: 20px;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content {
+    width: 36%;
+  }
+  body.style-thacDatanla-page .container-parent .body-content .content .thacDatanla-wrapper .thacDatanla-box .thacDatanla-box-content .thacDatanla-content {
+    width: auto;
+  }
+  body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+  }
+  body.style-thacDatanla-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding: 0px;
+  }
+  body.style-thacDatanla-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+  body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-header {
+    width: 430px;
+    height: 292px;
+    margin-top: 20px;
+    background-size: contain;
+  }
+  body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content .phongCachSong-title h1 {
+    font-size: 17px;
+  }
+  body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box {
+    margin-top: 0;
+    display: block;
+  }
+  body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content .phongCachSong-content h2 {
+    width: 300px;
+    font-size: 15px;
+  }
+  body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content .phongCachSong-content p {
+    padding-right: 50px;
+  }
+  body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content .phongCachSong-content .image-phongCachSong img {
+    width: 85%;
+  }
+  body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content {
+    width: 36%;
+  }
+  body.style-phongCachSong-page .container-parent .body-content .content .phongCachSong-wrapper .phongCachSong-box .phongCachSong-box-content .phongCachSong-content {
+    width: auto;
+  }
+  body.style-phongCachSong-page .container-parent .footer .footer-box .footer-center {
+    padding: 0px 10px;
+  }
+  body.style-phongCachSong-page .container-parent .footer .footer-box .footer-center .footer-tag-cloud {
+    padding: 0px;
+  }
+  body.style-phongCachSong-page .container-parent .footer .footer-box .footer-right .footer-recent-post .footer-recent-post-list ul li {
+    width: auto;
+    padding: 2px;
+    font-size: 5px;
+  }
+  * .container-parent .header .nav-Navigation nav ul li {
+    padding: 0px 0px 23px 10px;
+  }
 }/*# sourceMappingURL=app.css.map */
