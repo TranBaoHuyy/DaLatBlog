@@ -20,6 +20,11 @@
             <a href="{{ route('phongCachSong') }}">PHONG CÁCH SỐNG</a>
             </div>
         </div>
+        <div class="blog-choice4">
+            <div class="title-blog">
+            <a href="{{ route('gallery') }}">THƯ VIỆN ẢNH</a>
+            </div>
+        </div>
     </div>
 </div>
 

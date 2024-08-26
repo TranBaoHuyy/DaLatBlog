@@ -3,83 +3,133 @@
         <p>Các bài viết nổi bật</p>
     </div>
     <div class="blog-content">
-        <div class="blog-content-left">
+        <div class="blog-content-center">
             @foreach($blogs as $blog)
             <div class="blog-wrapper">
                 <div class="blog-thumbnail">           
-                    <div class="blog-date">
-                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                        <div class="calendar-time">
-                            <p>{{ $blog->created_at->format('d') }}</p>
-                           <p>{{ $blog->created_at->format('F Y') }}</p>
-                        </div>
-                    </div>
                     <div class="blog-image">
                             <img src="{{ asset($blog->image) }}" alt="{{ $blog->title }}" style="width: 100%;height: 340px;">
                     </div>
                 </div>
                 <div class="blog-content-inner">
-                    <div class="blog-content-inner-wrapper">
-                      
-                        <h1>{{ $blog->title }}</h1>
-                    <p>
-                        {{ $blog->content}}
-                    </p> 
-                    <button class="button-read">
-                        Xem Thêm
-                    </button>
-                    <div class="social-icon">
-                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>                     
-                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-                        <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest" aria-hidden="true"></i></a>
-                        <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
-                    </div>
+                    <div class="blog-content-inner-wrapper">            
+                            <h1>{{ $blog->title }}</h1>
+                        <p>
+                            {{ $blog->content}}
+                        </p> 
+                        <button class="button-read">
+                            Xem Thêm
+                        </button>
                     </div>
                 </div>
             </div>
             @endforeach
         </div>
-       
-        <!---blog-content-right--->
-        <div class="blog-content-right">
-            <div class="sidebar">
-                <div class="about-me">
-                    <div class="about-me-title">
-                        <p>GIỚI THIỆU</p>
-                    </div>
-                    <div class="about-me-image">
-                        <img src="{{ asset('/image/User.png')}}" alt="">
-                    </div>
-                    <div class="about-me-infor">
-                        <p>Tôi là một người có niềm đam mê mãnh liệt với việc khám phá những vẻ đẹp tiềm ẩn của Đà Lạt. Mỗi chuyến đi đến thành phố này là một hành trình mới, nơi tôi có cơ hội tìm hiểu sâu hơn về những góc nhỏ độc đáo, những con đường hoa dã quỳ, hay những đồi thông xanh mướt. Đà Lạt với tôi không chỉ là một địa điểm du lịch, mà là một nơi để cảm nhận sự kết nối với thiên nhiên và tìm thấy sự bình yên trong tâm hồn</p>
-                    </div>
-                </div>
-                <div class="social-network">
-                    <div class="social-network-title">
-                        <p>MẠNG XÃ HỘI</p>
-                    </div>
-                    <div class="social-network-icon">
-                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>                     
-                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-                        <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest" aria-hidden="true"></i></a>
-                        <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+        <!--đánh giá-->
+        <div class="evaluate">
+            <div class="evaluate-wrapper">
+                <div class="evaluate-left">
+                    <div class="testimonials">
+                            <div class="testimonials-title">
+                                <p>TESTIMONIALS</p>
+                                <h1>CẢM NHẬN CỦA DU KHÁCH</h1>
+                            </div>
+                            <div class="testimonials-content">
+                                <p>Người ta thấy Đà Lạt xinh đẹp bằng đôi mắt nhưng cảm nhận được cái tình,
+                                     cái thơ, cái bình yên của thành phố này thì phải bằng tâm hồn.</p>
+                            </div>
                     </div>
                 </div>
-                <div class="category"><!--lam category -mcr--->
-                    <div class="category-title">
-                        <p>THƯ VIỆN</p>
-                    </div>
-                    <div class="category-box">
-                        <ul>
-                            <li><a href="{{ route('travelTrip') }}">Hướng dẫn du lịch</a></li>
-                            <li><a href="{{ route('phongCachSong') }}">Phong cách sống</a></li>
-                            <li><a href="{{ route('cuisine') }}">Ẩm thực</a></li>
-                            <li><a href="{{ route('travelTrip') }}">Giới thiệu</a></li>
-                            <li><a href="{{ route('travelTour') }}">Điểm đến</a></li>
-                        </ul>
+                <div class="evaluate-right">
+                    <div class="evaluate-box">
+                        <div class="evaluate-detail1">
+                            <p>Hỡi những ai yêu quý Đà Lạt, yêu quý những đồi núi chập chùng, những sương mờ giăng khắp lối, xin hãy một lần suy nghĩ về nó. 
+                                Xin hãy tỏ ra mình là ngừời có trách nhiệm, đừng thờ ơ với những gì xung quanh</p>
+                            <div class="evaluate-infor">
+                                <div class="evaluate-name">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
 
+                                    <h2>Nguyễn Thị A</h2>
+                                    <p>Du khách</p>
+                                </div>
+                                <div class="evaluate-image">
+                                    <img src="https://cdn2750.cdn-template-4s.com/media/khach-hang/team-2.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="evaluate-detail1">
+                            <p>Giờ đây thì! còn đâu nữa, các cụ già có tuổi vẫn có thể không cần những áo ấm như xưa và những buổi chiều ngồi bên Hồ Xuân Huơng nhìn dòng nước trôi mà ngậm ngùi nhớ về một ngày xưa đó…! 
+                                một kỷ niệm mà chỉ có những người sống lâu năm ở vùng đất này mới thấy thấm thía khi nó đã không còn.</p>
+                            <div class="evaluate-infor">
+                                <div class="evaluate-name">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                                    <h2>Nguyễn Văn B</h2>
+                                    <p>Du khách</p>
+                                </div>
+                                <div class="evaluate-image">
+                                    <img src="https://cdn2750.cdn-template-4s.com/media/khach-hang/team-3.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--liên hệ--->
+        <div class="contact">
+            <div class="contact-wrapper">
+                <div class="contact-left">
+                    <div class="contact-left-title">
+                        <div class="contact-title-content">
+                            <h1>LIÊN HỆ ĐỂ TƯ VẤN</h1>
+                            <p>Hotline : 0123456789</p>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <input type="text" placeholder="Họ và tên" class="form-control" id="name" name="name"  required>
+                                <input type="text" placeholder="Số điện thoại" class="form-control" id="phone" name="phone"  required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Tiêu đề" class="form-control" id="content" name="content"  required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Nội dung" class="form-control" id="content1" name="content1"></textarea>
+                            </div>
+                        </form>  
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <div class="contact-right-title">
+                        <h1>CÂU HỎI THƯỜNG GẶP</h1>
+                    </div>
+                    <div class="question-box">
+                        <div class="question">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            <p>Những địa điểm nào tốt nhất khi đi du lịch Đà lạt ?</p>
+                        </div>
+                        <div class="question">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            <p>Những món ngon nào tốt nhất khi đi du lịch Đà lạt ?</p>
+                        </div>
+                        <div class="question">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            <p>Người Đà lạt có thân thiện không ?</p>
+                        </div>
+                        <div class="question">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            <p>Những địa điểm vui chơi khi đi du lịch Đà lạt ?</p>
+                        </div>
                     </div>
                 </div>
             </div>
