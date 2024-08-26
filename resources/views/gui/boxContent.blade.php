@@ -1,6 +1,21 @@
 <div class="box-content-wrapper">
     <div class="box-content-header">
-
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="{{ asset("/image/bground.jpg") }}" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset("/image/background.jpg") }}" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset("/image/banner2.jpg") }}" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset("/image/banner3.jpg") }}" alt="">
+            </div>
+        </div>
+        <button class="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        <button class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
     </div>
     <div id="boxContent" class="content-blog">
         <div class="blog-choice1">

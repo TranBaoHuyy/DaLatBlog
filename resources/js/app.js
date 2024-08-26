@@ -74,3 +74,33 @@ window.addEventListener('scroll', function() {
 
     lastScroll = scrollTop;gallery-cuisen
 });
+
+// carousel
+const carousel = document.querySelector(".carousel");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+let index = 0;
+function showSlide(newIndex){
+    const slides = document.querySelectorAll(".carousel-item");
+    const totalSlides = slides.length;
+
+    if(newIndex >= totalSlides){
+        index = 0;
+    }else if(newIndex < 0){
+        index = totalSlides - 1;
+    }else{
+        index = newIndex;
+    }
+    carousel.style.transform = `translateX(${-index * 100}%)`;
+}
+
+next.addEventListener('click', () => {
+    showSlide(index + 1);
+});
+
+prev.addEventListener('click', () => {
+    showSlide(index - 1);
+});
+
+
+
